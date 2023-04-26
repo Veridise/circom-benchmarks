@@ -1,5 +1,7 @@
 pragma circom 2.0.0;
 
+// RUN: check-compiles.sh %s %t
+
 template A(n) {
   signal input a[n];
   signal output b[n];

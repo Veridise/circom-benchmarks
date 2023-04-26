@@ -16,7 +16,6 @@ assert cargo_path is not None, "cargo not found on PATH"
 
 config.substitutions.append(("%cargo", f"{cargo_path} -C circom run"))
 config.substitutions.append(("%circom-flags", ""))
-
 import lit.llvm
 
 lit.llvm.initialize(lit_config, config)

@@ -1,5 +1,7 @@
 pragma circom 2.0.0;
 
+// RUN: check-not-compiles.sh %s %t
+
 template A(n) {
   signal input a[n];
   signal output b[n];
@@ -17,7 +19,7 @@ template Array5(n) {
 
     for (var i = 0; i < n; i++) {
       a_cmp.a[0] <== a[i];
-      // All to a_cmp should happen here when all the values are set
+      // Rejected because we try to assign to a_cmp.a[0] more than once
     }
 
     for (var i = 0; i < n; i++) {
