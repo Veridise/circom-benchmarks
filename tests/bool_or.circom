@@ -2,11 +2,11 @@ pragma circom 2.0.0;
 
 // RUN: check-compiles.sh %s %t
 
-template BoolNot() {
+template BoolOr() {
     signal input a, b;
     signal output out;
 
-    out <-- !(a < b) ? 1 : 0;
+    out <-- (a > 0 || b > 0) ? 1 : 0;
 }
 
-component main = BoolNot();
+component main = BoolOr();
