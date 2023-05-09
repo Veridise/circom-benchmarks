@@ -1,0 +1,14 @@
+{
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Electron-Labs/ed25519-circom/",
+	"commit": "",
+	"tests": [
+		{
+			"name": "LessThanPower",
+			"file": "lt.circom",
+			"template": "LessThanPower",
+			"main": "main.circom",
+			"description": "Output signals `out` are not constrained."
+		}
+	]
+}

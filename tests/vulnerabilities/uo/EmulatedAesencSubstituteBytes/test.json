@@ -1,0 +1,14 @@
+{
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Electron-Labs/aes-circom/",
+	"commit": "",
+	"tests": [
+		{
+			"name": "EmulatedAesencSubstituteBytes",
+			"file": "aes_emulation.circom",
+			"template": "EmulatedAesencSubstituteBytes",
+			"main": "main.circom",
+			"description": "Output signals `out` are not constrained."
+		}
+	]
+}
