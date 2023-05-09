@@ -3,3 +3,4 @@ outputs/
 tests/Output
 .lit_test_times.txt
 .DS_Store
+reports
