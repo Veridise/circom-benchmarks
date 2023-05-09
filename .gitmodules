@@ -1,3 +1,0 @@
-[submodule "circom"]
-	path = circom
-	url = git@github.com:Veridise/circom.git
