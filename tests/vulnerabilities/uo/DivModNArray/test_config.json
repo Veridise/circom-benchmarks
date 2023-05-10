@@ -1,0 +1,37 @@
+{
+    "src_path": "src",
+    "language": "circom",
+    "timeout": 300,
+    "circom_template":
+    {
+        "DivModNArray@veridise@n=13@k=2.circom": {
+            "DivModNArray": {
+                "args": [
+                    "n",
+                    "k"
+                ],
+                "values" : {
+                    "n": 13,
+                    "k": 2
+                },
+                "signals": [
+                    {
+                        "name": "inp",
+                        "signal_type": "Input",
+                        "array_constraints": ["k"]
+                    },
+                    {
+                        "name": "div",
+                        "signal_type": "Output",
+                        "array_constraints": ["k"]
+                    },
+                    {
+                        "name": "mod",
+                        "signal_type": "Output",
+                        "array_constraints": ["k"]
+                    }
+                ]
+            }
+        }
+    }
+}

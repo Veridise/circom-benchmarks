@@ -1,0 +1,25 @@
+{
+    "src_path": "../../../libs/ed25519",
+    "include_path": "../../../libs/circomlib",
+    "language": "circom",
+    "timeout": 600,
+    "save_artifacts": false,
+    "debug": false,
+    "circom_template":
+    {
+        "pointcompress.circom": {
+            "PointCompress": {
+                "signals": [
+                    {
+                        "name": "P",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "out",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

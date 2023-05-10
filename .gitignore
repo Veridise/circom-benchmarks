@@ -5,3 +5,4 @@ tests/Output
 .DS_Store
 tags/
 *.swp
+.artifacts

@@ -1,0 +1,30 @@
+{
+    "src_path": "src",
+    "include_path": "../../../libs",
+    "witness_path": "witness",
+    "language": "circom",
+    "timeout": 600,
+    "circom_template":
+    {
+        "Num2BitsCheck@veridise@msgBits=4.circom": {
+            "Num2BitsCheck": {
+                "args": [
+                    "msgBits"
+                ],
+                "values" : {
+                    "msgBits": 16
+                },
+                "signals": [
+                    {
+                        "name": "msg_in",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "msg_out",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

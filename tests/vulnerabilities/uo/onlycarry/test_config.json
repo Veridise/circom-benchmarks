@@ -1,0 +1,33 @@
+{
+    "src_path": "src",
+    "witness_path": "witness",
+    "language": "circom",
+    "timeout": 600,
+    "circom_template":
+    {
+        "binadd_dummy.circom": {
+            "onlycarry": {
+                "args"   : [],
+                "values" : {},
+                "signals": [
+                    {
+                        "name": "bit",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "carry",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "val",
+                        "signal_type": "Output"
+                    },
+                    {
+                        "name": "carry_out",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

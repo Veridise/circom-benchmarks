@@ -1,0 +1,25 @@
+{
+    "src_path": "src",
+    "include_path": "../../../libs",
+    "language": "circom",
+    "timeout": 600,
+    "circom_template":
+    {
+        "LessThan@ed25519.circom": {
+            "LessThanBounded": {
+                "args": ["base"],
+                "values" : {"base":4},
+                "signals": [
+                    {
+                        "name": "in",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "out",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}
