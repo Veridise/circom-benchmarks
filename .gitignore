@@ -6,3 +6,5 @@ tests/Output
 tags/
 *.swp
 .artifacts
+test_runner/.venv
+*.pyc
