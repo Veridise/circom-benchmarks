@@ -1,0 +1,32 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/WindowMulFix/src",
+    "include_path": "../../../tests/libs",
+    "language": "circom",
+    "timeout": 600,
+    "debug": true,
+    "circom_template":
+    {
+        "escalarmulfix_dummy.circom": {
+            "WindowMulFixDummy": {
+                "signals": [
+                    {
+                        "name": "in",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "base",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "out",
+                        "signal_type": "Output"
+                    },
+                    {
+                        "name": "out8",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

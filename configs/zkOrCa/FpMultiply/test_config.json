@@ -1,0 +1,42 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/FpMultiply/src",
+    "include_path": "../../../tests/libs",
+    "language": "circom",
+    "timeout": 600,
+    "save_artifacts": false,
+    "debug": true,
+    "circom_template":
+    {
+        "fp.circom": {
+            "FpMultiply": {
+                "args": [
+                    "n",
+                    "k",
+                    "p"
+                ],
+                "values" : {
+                    "n": 55,
+                    "k": 7,
+                    "p": [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425]
+                },
+                "signals": [
+                    {
+                        "name": "a",
+                        "signal_type": "Input",
+                        "array_constraints": ["k"]
+                    },
+                    {
+                        "name": "b",
+                        "signal_type": "Input",
+                        "array_constraints": ["k"]
+                    },
+                    {
+                        "name": "out",
+                        "signal_type": "Output",
+                        "array_constraints": ["k"]
+                    }
+                ]
+            }
+        }
+    }
+}

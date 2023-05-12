@@ -4,9 +4,9 @@
 	"commit": "",
 	"tests": [
 		{
-			"name": "LessThanPower",
+			"name": "LessThanBounded",
 			"file": "lt.circom",
-			"template": "LessThanPower",
+			"template": "LessThanBounded",
 			"main": "main.circom",
 			"description": "Output signal `out` is underconstrained."
 		}

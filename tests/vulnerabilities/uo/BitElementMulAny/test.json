@@ -1,0 +1,14 @@
+{
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/blob/main/benchmarks/circomlib-cff5ab6",
+	"commit": "",
+	"tests": [
+		{
+			"name": "BitElementMulAny",
+			"file": "escalarmulany.circom",
+			"template": "BitElementMulAny",
+			"main": "main.circom",
+			"description": "Output signals `dblOut` and `addOut` are underconstrained."
+		}
+	]
+}

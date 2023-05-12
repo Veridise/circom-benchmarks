@@ -1,0 +1,14 @@
+{
+	"source": "ZKSolid",
+	"project_url": "https://github.com/whbjzzwjxq/ZKSolid-bmk-circom-pairing/tree/master/circuits",
+	"commit": "",
+	"tests": [
+		{
+			"name": "FpMultiply",
+			"file": "fp.circom",
+			"template": "FpMultiply",
+			"main": "main.circom",
+			"description": "Uses SignedFpCarryModP template which has underconstrained outputs."
+		}
+	]
+}

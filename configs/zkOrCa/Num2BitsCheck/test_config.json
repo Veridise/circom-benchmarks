@@ -1,0 +1,30 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/Num2BitsCheck/src",
+    "include_path": "../../../tests/libs",
+    "witness_path": "witness",
+    "language": "circom",
+    "timeout": 600,
+    "circom_template":
+    {
+        "Num2BitsCheck.circom": {
+            "Num2BitsCheck": {
+                "args": [
+                    "msgBits"
+                ],
+                "values" : {
+                    "msgBits": 32
+                },
+                "signals": [
+                    {
+                        "name": "msg_in",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "msg_out",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

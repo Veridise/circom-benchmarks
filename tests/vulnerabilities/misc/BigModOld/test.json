@@ -1,0 +1,14 @@
+{
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/knownbugs",
+	"commit": "",
+	"tests": [
+		{
+			"name": "BigModOld",
+			"file": "BigModOld.circom",
+			"template": "BigModOld",
+			"main": "main.circom",
+			"description": "Num2Bits range check missing for output signal `mod`."
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/MontgomeryAdd/src",
+    "language": "circom",
+    "timeout": 600,
+    "circom_template":
+    {
+        "montgomery_dummy.circom": {
+            "MontgomeryAdd": {
+                "signals": [
+                    {
+                        "name": "in1",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "in2",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "out",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/BitElementMulAny/src",
+    "include_path": "../../../tests/libs",
+    "witness_path": "witness",
+    "language": "circom",
+    "timeout": 600,
+    "circom_template":
+    {
+        "escalarmulany.circom": {
+            "BitElementMulAny": {
+                "args": [],
+                "values" : {},
+                "signals": [
+                    {
+                        "name": "sel",
+                        "signal_type": "Input",
+                        "array_constraints": []
+                    },
+                    {
+                        "name": "dblIn",
+                        "signal_type": "Input",
+                        "array_constraints": []
+                    },
+                    {
+                        "name": "addIn",
+                        "signal_type": "Input",
+                        "array_constraints": []
+                    },
+                    {
+                        "name": "dblOut",
+                        "signal_type": "Output",
+                        "array_constraints": []
+                    },
+                    {
+                        "name": "addOut",
+                        "signal_type": "Output",
+                        "array_constraints": []
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/circomlib-cff5ab6",
+	"commit": "",
+	"tests": [
+		{
+			"name": "BinSum",
+			"file": "binsum.circom",
+			"template": "BinSum",
+			"main": "main.circom",
+			"description": "Output signal `out` is underconstrained."
+		}
+	]
+}

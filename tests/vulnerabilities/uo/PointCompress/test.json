@@ -1,0 +1,14 @@
+{
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Electron-Labs/ed25519-circom/",
+	"commit": "",
+	"tests": [
+		{
+			"name": "PointCompress",
+			"file": "pointcompress.circom",
+			"template": "PointCompress",
+			"main": "main.circom",
+			"description": "Output signal `out[255]` is not constrained."
+		}
+	]
+}

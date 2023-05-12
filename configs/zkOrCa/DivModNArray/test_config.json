@@ -1,0 +1,37 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/DivModNArray/src",
+    "language": "circom",
+    "timeout": 300,
+    "circom_template":
+    {
+        "DivModNArray_dummy.circom": {
+            "DivModNArray": {
+                "args": [
+                    "n",
+                    "k"
+                ],
+                "values" : {
+                    "n": 13,
+                    "k": 2
+                },
+                "signals": [
+                    {
+                        "name": "inp",
+                        "signal_type": "Input",
+                        "array_constraints": ["k"]
+                    },
+                    {
+                        "name": "div",
+                        "signal_type": "Output",
+                        "array_constraints": ["k"]
+                    },
+                    {
+                        "name": "mod",
+                        "signal_type": "Output",
+                        "array_constraints": ["k"]
+                    }
+                ]
+            }
+        }
+    }
+}

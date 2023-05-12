@@ -1,5 +1,5 @@
 pragma circom 2.0.0;
 
-include "lt.circom";
+include "lt_dummy.circom";
 
 component main{public [in]} = LessThanPowerDummy(2);
