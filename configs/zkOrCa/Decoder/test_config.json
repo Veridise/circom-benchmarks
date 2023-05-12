@@ -1,0 +1,33 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/Decoder/src",
+    "language": "circom",
+    "timeout": 300,
+    "circom_template":
+    {
+        "multiplexer_dummy.circom": {
+            "Decoder": {
+                "args": [
+                    "w"
+                ],
+                "values" : {
+                    "w": 8
+                },
+                "signals": [
+                    {
+                        "name": "inp",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "out",
+                        "signal_type": "Output",
+                        "array_constraints": ["w"]
+                    },
+                    {
+                        "name": "success",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

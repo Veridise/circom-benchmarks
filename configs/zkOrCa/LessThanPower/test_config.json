@@ -1,0 +1,25 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/LessThanPower/src",
+    "include_path": "../../../tests/libs",
+    "language": "circom",
+    "timeout": 600,
+    "circom_template":
+    {
+        "lt_dummy.circom": {
+            "LessThanPowerDummy": {
+                "args": ["base"],
+                "values" : {"base":4},
+                "signals": [
+                    {
+                        "name": "in",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "out",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/Edwards2Montgomery/src",
+    "language": "circom",
+    "timeout": 600,
+    "circom_template":
+    {
+        "montgomery_dummy.circom": {
+            "Edwards2Montgomery": {
+                "signals": [
+                    {
+                        "name": "in",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "out",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

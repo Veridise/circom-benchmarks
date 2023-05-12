@@ -1,0 +1,33 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/DivModN/src",
+    "language": "circom",
+    "timeout": 3600,
+    "circom_template":
+    {
+        "DivModN_dummy.circom": {
+            "DivModN": {
+                "args": [
+                    "n"
+                ],
+                "values" : {
+                    "n": 13
+                },
+                "signals": [
+                    {
+                        "name": "inp",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "div",
+                        "signal_type": "Output"
+                    },
+                    {
+                        "name": "mod",
+                        "signal_type": "Output",
+                        "array_constraints": []
+                    }
+                ]
+            }
+        }
+    }
+}

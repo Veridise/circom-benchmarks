@@ -1,0 +1,43 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/BigModOld/src",
+    "include_path": "../../../tests/libs",
+    "language": "circom",
+    "timeout": 600,
+    "circom_template":
+    {
+        "BigModOld@circom-pairing@n=8@k=2.circom": {
+            "BigModOld": {
+                "args": [
+                    "n", 
+                    "k"
+                ],
+                "values" : {
+                    "n": 8, 
+                    "k": 2
+                },
+                "signals": [
+                    {
+                        "name": "a",
+                        "signal_type": "Input",
+                        "array_constraints": ["k"]
+                    },
+                    {
+                        "name": "b",
+                        "signal_type": "Input",
+                        "array_constraints": ["k"]
+                    },
+                    {
+                        "name": "div",
+                        "signal_type": "Output",
+                        "array_constraints": ["k"]
+                    },
+                    {
+                        "name": "mod",
+                        "signal_type": "Output",
+                        "array_constraints": ["k"]
+                    }
+                ]
+            }
+        }
+    }
+}

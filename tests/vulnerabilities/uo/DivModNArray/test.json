@@ -1,0 +1,17 @@
+{
+    "id": "DivModNArray",
+	"source": "???",
+	"project_url": "???",
+	"commit": "",
+    "internal": true,
+    "synthetic": true,
+	"tests": [
+		{
+			"id": "DivModNArray",
+			"file": "src/DivModNArray.circom",
+			"template": "DivModNArray",
+			"main": "src/main.circom",
+			"description": "Output signals `div` and `mod` are underconstrained."
+		}
+	]
+}
