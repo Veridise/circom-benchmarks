@@ -1,4 +1,4 @@
-# fulladder
+# LessThanBounded
 
 Source: ZKSolid
 
@@ -10,14 +10,14 @@ Internal: False
 
 Synthetic: False
 
-## fulladder
+## LessThanBounded
 
-**File**: src/binadd.circom
+**File**: src/lt.circom
 
-**Template**: fulladder
+**Template**: LessThanBounded
 
 **Main**: src/main.circom
 
-**Description**: Output signals `val` and `carry_out` are not constrained.
+**Description**: Output signal `out` is underconstrained.
 
 

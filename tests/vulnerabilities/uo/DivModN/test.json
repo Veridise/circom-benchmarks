@@ -1,13 +1,16 @@
 {
+    "id": "DivModN",
 	"source": "ZKSolid",
 	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/internal",
 	"commit": "",
+    "internal": true,
+    "synthetic": true,
 	"tests": [
 		{
-			"name": "DivModN",
-			"file": "DivModN.circom",
+			"id": "DivModN",
+			"file": "src/DivModN.circom",
 			"template": "DivModN",
-			"main": "main.circom",
+			"main": "src/main.circom",
 			"description": "Output signals `div` and `mod` are underconstrained."
 		}
 	]

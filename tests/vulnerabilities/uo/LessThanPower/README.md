@@ -1,11 +1,23 @@
 # LessThanPower
 
-source: ZKSolid Benchmark
+Source: ZKSolid
 
-buggy file: `lt.circom`
+Project URL: https://github.com/Electron-Labs/ed25519-circom/
 
-buggy template: `LessThanPower`
+Commit: 
 
-code: <https://github.com/Electron-Labs/ed25519-circom/blob/main/circuits/lt.circom#5>
+Internal: True
 
-Description: Output signals `out` are not constrained.
+Synthetic: False
+
+## LessThanPower
+
+**File**: src/lt.circom
+
+**Template**: LessThanPower
+
+**Main**: src/main.circom
+
+**Description**: Output signal `out` is underconstrained.
+
+

@@ -1,13 +1,16 @@
 {
+    "id": "Window4",
 	"source": "ZKSolid",
 	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/circomlib-cff5ab6",
 	"commit": "",
+    "internal": false,
+    "synthetic": false,
 	"tests": [
 		{
-			"name": "Window4",
-			"file": "pedersen.circom",
+			"id": "Window4",
+			"file": "src/pedersen.circom",
 			"template": "Window4",
-			"main": "main.circom",
+			"main": "src/main.circom",
 			"description": "Output signals `out` and `out8` are underconstrained."
 		}
 	]

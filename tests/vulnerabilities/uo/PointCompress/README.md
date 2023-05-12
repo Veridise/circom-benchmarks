@@ -1,4 +1,4 @@
-# fulladder
+# PointCompress
 
 Source: ZKSolid
 
@@ -10,14 +10,14 @@ Internal: False
 
 Synthetic: False
 
-## fulladder
+## PointCompress
 
-**File**: src/binadd.circom
+**File**: src/pointcompress.circom
 
-**Template**: fulladder
+**Template**: PointCompress
 
 **Main**: src/main.circom
 
-**Description**: Output signals `val` and `carry_out` are not constrained.
+**Description**: Output signal `out[255]` is not constrained.
 
 

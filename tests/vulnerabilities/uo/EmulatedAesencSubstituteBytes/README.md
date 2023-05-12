@@ -1,11 +1,23 @@
 # EmulatedAesencSubstituteBytes
 
-source: ZKSolid Benchmark
+Source: ZKSolid
 
-buggy file: `aes_emulation.circom`
+Project URL: https://github.com/Electron-Labs/aes-circom/
 
-buggy template: `EmulatedAesencSubstituteBytes`
+Commit: 
 
-code: <https://github.com/Electron-Labs/aes-circom/blob/master/circuits/aes_emulation.circom>
+Internal: False
 
-Description: Output signals `out` are not constrained.
+Synthetic: False
+
+## EmulatedAesencSubstituteBytes
+
+**File**: src/aes_emulation.circom
+
+**Template**: EmulatedAesencSubstituteBytes
+
+**Main**: src/main.circom
+
+**Description**: Output signals `out` are not constrained.
+
+

@@ -1,13 +1,16 @@
 {
+    "id": "SignedFpCarryModP",
 	"source": "ZKSolid",
 	"project_url": "https://github.com/whbjzzwjxq/ZKSolid-bmk-circom-pairing/tree/master/circuits",
 	"commit": "",
+    "internal": false,
+    "synthetic": false,
 	"tests": [
 		{
-			"name": "SignedFpCarryModP",
-			"file": "fp.circom",
+			"id": "SignedFpCarryModP",
+			"file": "src/fp.circom",
 			"template": "SignedFpCarryModP",
-			"main": "main.circom",
+			"main": "src/main.circom",
 			"description": "Output signals `out` and `X` are underconstrained."
 		}
 	]

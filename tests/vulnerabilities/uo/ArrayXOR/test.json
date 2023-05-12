@@ -1,13 +1,16 @@
 {
+    "id": "ArrayXOR",
 	"source": "ZKSolid",
 	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/internal",
 	"commit": "",
+    "internal": true,
+    "synthetic": true,
 	"tests": [
 		{
-			"name": "ArrayXOR",
-			"file": "ArrayXOR.circom",
+			"id": "ArrayXOR",
+			"file": "src/ArrayXOR.circom",
 			"template": "ArrayXOR",
-			"main": "main.circom",
+			"main": "src/main.circom",
 			"description": "Output signal `out` is not constrained."
 		}
 	]

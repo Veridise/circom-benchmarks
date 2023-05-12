@@ -1,11 +1,23 @@
 # onlycarry
 
-source: ZKSolid Benchmark
+Source: ZKSolid
 
-buggy file: `binadd.circom`
+Project URL: https://github.com/Electron-Labs/ed25519-circom/
 
-buggy template: `onlycarry`
+Commit: 
 
-code: <https://github.com/Electron-Labs/ed25519-circom/blob/main/circuits/binadd.circom#102>
+Internal: False
 
-Description: Output signals `val` and `carry_out` are not constrained.
+Synthetic: False
+
+## onlycarry
+
+**File**: src/binadd.circom
+
+**Template**: onlycarry
+
+**Main**: src/main.circom
+
+**Description**: Output signals `val` and `carry_out` are not constrained.
+
+
