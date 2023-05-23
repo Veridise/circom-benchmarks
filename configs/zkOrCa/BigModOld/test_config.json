@@ -5,7 +5,7 @@
     "timeout": 600,
     "circom_template":
     {
-        "BigModOld@circom-pairing@n=8@k=2.circom": {
+        "BigModOld.circom": {
             "BigModOld": {
                 "args": [
                     "n", 

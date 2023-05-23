@@ -1,7 +1,5 @@
 pragma circom 2.0.0;
 
-include "../libs/circomlib/circuits/bitify.circom";
-
 template LessThanPowerDummy(base) {
   signal input in;
   signal output out;

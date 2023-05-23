@@ -1,5 +1,5 @@
 pragma circom 2.0.0;
 
-include "DivModN_dummy.circom";
+include "DivModN.circom";
 
 component main{public [inp]} = DivModN(13);

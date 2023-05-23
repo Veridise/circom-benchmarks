@@ -5,4 +5,10 @@ tests/Output
 .DS_Store
 tags/
 *.swp
+
+# Excluding zkOrCa artifacts 
 .artifacts
+
+# Excluding the circom artifacts
+*.r1cs
+*.sym
