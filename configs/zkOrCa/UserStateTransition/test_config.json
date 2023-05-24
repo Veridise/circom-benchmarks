@@ -1,0 +1,106 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/UserStateTransition/src",
+    "include_path": "../../../tests/libs",
+    "language": "circom",
+    "timeout": 600,
+    "circom_template":
+    {
+        "userStateTransition.circom": {
+            "UserStateTransition": {
+                "args": [
+                    "STATE_TREE_DEPTH",
+                    "EPOCH_TREE_DEPTH",
+                    "HISTORY_TREE_DEPTH",
+                    "EPOCH_KEY_NONCE_PER_EPOCH",
+                    "FIELD_COUNT",
+                    "SUM_FIELD_COUNT",
+                    "REPL_NONCE_BITS"
+                ],
+                "values" : {
+                    "STATE_TREE_DEPTH": 1,
+                    "EPOCH_TREE_DEPTH": 2,
+                    "HISTORY_TREE_DEPTH": 3,
+                    "EPOCH_KEY_NONCE_PER_EPOCH": 4,
+                    "FIELD_COUNT": 6,
+                    "SUM_FIELD_COUNT": 5,
+                    "REPL_NONCE_BITS": 7
+                },
+                "signals": [
+                    {
+                        "name": "from_epoch",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "to_epoch",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "identity_secret",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "state_tree_indexes",
+                        "signal_type": "Input",
+                        "array_constraints": ["STATE_TREE_DEPTH"]
+                    },
+                    {
+                        "name": "state_tree_elements",
+                        "signal_type": "Input",
+                        "array_constraints": ["STATE_TREE_DEPTH"]
+                    },
+                    {
+                        "name": "history_tree_root",
+                        "signal_type": "Output"
+                    },
+                    {
+                        "name": "state_tree_leaf",
+                        "signal_type": "Output"
+                    },
+                    {
+                        "name": "history_tree_indices",
+                        "signal_type": "Input",
+                        "array_constraints": ["HISTORY_TREE_DEPTH"]
+                    },
+                    {
+                        "name": "history_tree_elements",
+                        "signal_type": "Input",
+                        "array_constraints": ["HISTORY_TREE_DEPTH"]
+                    },
+                    {
+                        "name": "attester_id",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "data",
+                        "signal_type": "Input",
+                        "array_constraints": ["FIELD_COUNT"]
+                    },
+                    {
+                        "name": "new_data",
+                        "signal_type": "Input",
+                        "array_constraints": ["EPOCH_KEY_NONCE_PER_EPOCH", "FIELD_COUNT"]
+                    },
+                    {
+                        "name": "epoch_tree_root",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "epoch_tree_elements",
+                        "signal_type": "Input",
+                        "array_constraints": ["EPOCH_KEY_NONCE_PER_EPOCH", "EPOCH_TREE_DEPTH"]
+                    },
+                    {
+                        "name": "epoch_tree_indices",
+                        "signal_type": "Input",
+                        "array_constraints": ["EPOCH_KEY_NONCE_PER_EPOCH", "EPOCH_TREE_DEPTH"]
+                    },
+                    {
+                        "name": "epks",
+                        "signal_type": "Output",
+                        "array_constraints": ["EPOCH_KEY_NONCE_PER_EPOCH"]
+                    }
+                ]
+            }
+        }
+    }
+}

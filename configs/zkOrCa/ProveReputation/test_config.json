@@ -1,0 +1,108 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/ProveReputation/src",
+    "include_path": "../../../tests/libs",
+    "language": "circom",
+    "timeout": 600,
+    "circom_template":
+    {
+        "proveReputation.circom": {
+            "ProveReputation": {
+                "args": [
+                    "STATE_TREE_DEPTH",
+                    "EPOCH_KEY_NONCE_PER_EPOCH",
+                    "SUM_FIELD_COUNT",
+                    "FIELD_COUNT",
+                    "REPL_NONCE_BITS"
+                ],
+                "values" : {
+                    "STATE_TREE_DEPTH": 1,
+                    "EPOCH_KEY_NONCE_PER_EPOCH": 2,
+                    "SUM_FIELD_COUNT": 3,
+                    "FIELD_COUNT": 4,
+                    "REPL_NONCE_BITS": 5
+                },
+                "signals": [
+                    {
+                        "name": "identity_secret",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "state_tree_indexes",
+                        "signal_type": "Input",
+                        "array_constraints": ["STATE_TREE_DEPTH"]
+                    },
+                    {
+                        "name": "state_tree_elements",
+                        "signal_type": "Input",
+                        "array_constraints": ["STATE_TREE_DEPTH"]
+                    },
+                    {
+                        "name": "data",
+                        "signal_type": "Input",
+                        "array_constraints": ["FIELD_COUNT"]
+                    },
+                    {
+                        "name": "prove_graffiti",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "graffiti",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "reveal_nonce",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "attester_id",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "epoch",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "nonce",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "min_rep",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "max_rep",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "prove_min_rep",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "prove_max_rep",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "prove_zero_rep",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "sig_data",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "control",
+                        "signal_type": "Output"
+                    },
+                    {
+                        "name": "epoch_key",
+                        "signal_type": "Output"
+                    },
+                    {
+                        "name": "state_tree_root",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

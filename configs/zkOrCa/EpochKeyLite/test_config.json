@@ -1,0 +1,49 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/EpochKeyLite/src",
+    "include_path": "../../../tests/libs",
+    "language": "circom",
+    "timeout": 600,
+    "circom_template":
+    {
+        "epochKeyLite.circom": {
+            "EpochKeyLite": {
+                "args": ["EPOCH_KEY_NONCE_PER_EPOCH"],
+                "values" : {"EPOCH_KEY_NONCE_PER_EPOCH": 32},
+                "signals": [
+                    {
+                        "name": "identity_secret",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "reveal_nonce",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "attester_id",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "epoch",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "nonce",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "sig_data",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "control",
+                        "signal_type": "Output"
+                    },
+                    {
+                        "name": "epoch_key",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

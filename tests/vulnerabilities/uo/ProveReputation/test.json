@@ -1,0 +1,17 @@
+{
+    "id": "ProveReputation",
+	"source": "UniRep",
+	"project_url": "https://github.com/Unirep/Unirep/",
+	"commit": "0985a28c38c8b2e7b7a9e80f43e63179fdd08b89",
+    "internal": false,
+    "synthetic": false,
+	"tests": [
+		{
+			"id": "ProveReputation",
+			"file": "src/proveReputation.circom",
+			"template": "ProveReputation",
+			"main": "src/main.circom",
+			"description": "ProveReputation template is missing range check, making output underconstrained."
+		}
+	]
+}
