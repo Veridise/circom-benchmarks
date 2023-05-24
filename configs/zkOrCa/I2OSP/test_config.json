@@ -1,0 +1,28 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/I2OSP/src",
+    "language": "circom",
+    "timeout": 3600,
+    "circom_template":
+    {
+        "I2OSP.circom": {
+            "I2OSP": {
+                "args": [
+                    "l"
+                ],
+                "values" : {
+                    "l": 64
+                },
+                "signals": [
+                    {
+                        "name": "in",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "out",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

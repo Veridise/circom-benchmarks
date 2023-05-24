@@ -1,0 +1,17 @@
+{
+    "id": "UpperLessThan",
+	"source": "UniRep",
+	"project_url": "https://github.com/Unirep/Unirep/",
+	"commit": "0985a28c38c8b2e7b7a9e80f43e63179fdd08b89",
+    "internal": false,
+    "synthetic": false,
+	"tests": [
+		{
+			"id": "UpperLessThan",
+			"file": "src/bigComparators.circom",
+			"template": "UpperLessThan",
+			"main": "src/main.circom",
+			"description": "UpperLessThan template uses Num2Bits(254) which is underconstrained."
+		}
+	]
+}

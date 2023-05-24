@@ -1,0 +1,17 @@
+{
+    "id": "IO2SP",
+	"source": "Telepathy",
+	"project_url": "https://www.notion.so/veridise/Audit-Issue-Tracker-Internal-1edee4daa6904548ad0e1d36d262d4c6?p=3e02b7914102488fb63b247619e0dc09&pm=s",
+	"commit": "",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+		{
+			"id": "IO2SP",
+			"file": "src/IO2SP.circom",
+			"template": "IO2SP",
+			"main": "src/main.circom",
+			"description": "Output signal `out` is underconstrained for large values of l."
+		}
+	]
+}
