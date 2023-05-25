@@ -1,6 +1,6 @@
 pragma circom 2.0.0;
 
-include "../libs/circom-pairing/circuits/bigint.circom";
+include "../../../../libs/circom-pairing/circuits/bigint.circom";
 
 template BigModOld(n, k) {
     assert(n <= 126);
