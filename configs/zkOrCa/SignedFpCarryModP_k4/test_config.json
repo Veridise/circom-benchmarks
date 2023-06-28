@@ -2,7 +2,7 @@
     "src_path": "../../../tests/vulnerabilities/uo/SignedFpCarryModP/src",
     "include_path": "../../../tests/libs",
     "language": "circom",
-    "timeout": 3600,
+    "timeout": 14400,
     "save_artifacts": false,
     "debug": true,
     "circom_template":
@@ -16,10 +16,10 @@
                     "p"
                 ],
                 "values" : {
-                    "n": 5,
-                    "k": 1,
-                    "overflow": 6,
-                    "p": [13]
+                    "n": 20,
+                    "k": 4,
+                    "overflow": 21,
+                    "p": [63, 1, 1, 1]
                 },
                 "signals": [
                     {

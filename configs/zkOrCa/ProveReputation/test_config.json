@@ -11,15 +11,13 @@
                     "STATE_TREE_DEPTH",
                     "EPOCH_KEY_NONCE_PER_EPOCH",
                     "SUM_FIELD_COUNT",
-                    "FIELD_COUNT",
-                    "REPL_NONCE_BITS"
+                    "FIELD_COUNT"
                 ],
                 "values" : {
-                    "STATE_TREE_DEPTH": 1,
+                    "STATE_TREE_DEPTH": 17,
                     "EPOCH_KEY_NONCE_PER_EPOCH": 2,
-                    "SUM_FIELD_COUNT": 3,
-                    "FIELD_COUNT": 4,
-                    "REPL_NONCE_BITS": 5
+                    "SUM_FIELD_COUNT": 4,
+                    "FIELD_COUNT": 6
                 },
                 "signals": [
                     {
@@ -46,7 +44,7 @@
                         "signal_type": "Input"
                     },
                     {
-                        "name": "graffiti",
+                        "name": "graffiti_pre_image",
                         "signal_type": "Input"
                     },
                     {

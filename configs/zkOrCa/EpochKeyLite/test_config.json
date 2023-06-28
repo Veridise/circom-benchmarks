@@ -8,7 +8,7 @@
         "epochKeyLite.circom": {
             "EpochKeyLite": {
                 "args": ["EPOCH_KEY_NONCE_PER_EPOCH"],
-                "values" : {"EPOCH_KEY_NONCE_PER_EPOCH": 32},
+                "values" : {"EPOCH_KEY_NONCE_PER_EPOCH": 2},
                 "signals": [
                     {
                         "name": "identity_secret",

@@ -1,4 +1,4 @@
-pragma circom 2.0.3;
+pragma circom 2.0.0;
 
 include "../libs/circomlib/circuits/bitify.circom";
 include "../libs/circomlib/circuits/comparators.circom";
@@ -17,11 +17,17 @@ template Modulo() {
     remainder <-- dividend % divisor;
 
     // check that remainder and divisor are both < 2**252
-    component remainder_bits = Num2Bits(252);
+    component remainder_bits = Num2Bits(254);
     remainder_bits.in <== remainder;
+    for (var x = 252; x < 254; x++) {
+        remainder_bits.out[x] === 0;
+    }
 
-    component divisor_bits = Num2Bits(252);
+    component divisor_bits = Num2Bits(254);
     divisor_bits.in <== divisor;
+    for (var x = 252; x < 254; x++) {
+        divisor_bits.out[x] === 0;
+    }
 
     // now we can safely do a range check on remainder
     component remainder_lt;

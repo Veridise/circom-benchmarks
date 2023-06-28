@@ -2,4 +2,4 @@ pragma circom 2.0.0;
 
 include "userStateTransition.circom";
 
-component main = UserStateTransition(1, 2, 3, 4, 6, 5, 7);
+component main = UserStateTransition(17, 17, 17, 2, 6, 4, 48);

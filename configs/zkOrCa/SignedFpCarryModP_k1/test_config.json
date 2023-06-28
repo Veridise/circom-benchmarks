@@ -1,0 +1,40 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/SignedFpCarryModP_OneDim/src",
+    "include_path": "../../../tests/libs",
+    "language": "circom",
+    "timeout": 14400,
+    "save_artifacts": false,
+    "debug": true,
+    "circom_template":
+    {
+        "fp.circom": {
+            "SignedFpCarryModP_OneDim": {
+                "args": [
+                    "n",
+                    "overflow",
+                    "p"
+                ],
+                "values" : {
+                    "n": 5,
+                    "overflow": 6,
+                    "p": [13]
+                },
+                "signals": [
+                    {
+                        "name": "in",
+                        "signal_type": "Input"
+                    },
+                    {
+                        "name": "X",
+                        "signal_type": "Output",
+                        "array_constraints": ["overflow", "n"]
+                    },
+                    {
+                        "name": "out",
+                        "signal_type": "Output"
+                    }
+                ]
+            }
+        }
+    }
+}

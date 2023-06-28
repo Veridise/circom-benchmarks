@@ -1,0 +1,44 @@
+{
+    "src_path": "../../../tests/vulnerabilities/uo/SignedFpCarryModP/src",
+    "include_path": "../../../tests/libs",
+    "language": "circom",
+    "timeout": 14400,
+    "save_artifacts": false,
+    "debug": true,
+    "circom_template":
+    {
+        "fp.circom": {
+            "SignedFpCarryModP": {
+                "args": [
+                    "n",
+                    "k",
+                    "overflow",
+                    "p"
+                ],
+                "values" : {
+                    "n": 10,
+                    "k": 3,
+                    "overflow": 11,
+                    "p": [63, 1, 0]
+                },
+                "signals": [
+                    {
+                        "name": "in",
+                        "signal_type": "Input",
+                        "array_constraints": ["k"]
+                    },
+                    {
+                        "name": "X",
+                        "signal_type": "Output",
+                        "array_constraints": ["overflow", "n"]
+                    },
+                    {
+                        "name": "out",
+                        "signal_type": "Output",
+                        "array_constraints": ["k"]
+                    }
+                ]
+            }
+        }
+    }
+}

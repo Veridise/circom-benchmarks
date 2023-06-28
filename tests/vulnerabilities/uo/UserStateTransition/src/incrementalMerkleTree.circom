@@ -9,7 +9,6 @@ include "../libs/circomlib/circuits/poseidon.circom";
 include "../libs/circomlib/circuits/comparators.circom";
 
 template MerkleTreeInclusionProof(n_levels) {
-    assert(n_levels < 254);
     signal input leaf;
     signal input path_index[n_levels];
     signal input path_elements[n_levels];

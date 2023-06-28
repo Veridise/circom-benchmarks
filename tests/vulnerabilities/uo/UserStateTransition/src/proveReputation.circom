@@ -10,13 +10,10 @@ pragma circom 2.0.0;
 include "../libs/circomlib/circuits/comparators.circom";
 include "../libs/circomlib/circuits/gates.circom";
 include "../libs/circomlib/circuits/poseidon.circom";
-include "./bigComparators.circom";
 include "./incrementalMerkleTree.circom";
 include "./epochKey.circom";
 
-template ProveReputation(STATE_TREE_DEPTH, EPOCH_KEY_NONCE_PER_EPOCH, SUM_FIELD_COUNT, FIELD_COUNT, REPL_NONCE_BITS) {
-    assert(SUM_FIELD_COUNT < FIELD_COUNT);
-
+template ProveReputation(STATE_TREE_DEPTH, EPOCH_KEY_NONCE_PER_EPOCH, SUM_FIELD_COUNT, FIELD_COUNT) {
     signal output epoch_key;
 
     // Global state tree leaf: Identity & user state root
@@ -29,7 +26,7 @@ template ProveReputation(STATE_TREE_DEPTH, EPOCH_KEY_NONCE_PER_EPOCH, SUM_FIELD_
     signal input data[FIELD_COUNT];
     // Graffiti
     signal input prove_graffiti;
-    signal input graffiti;
+    signal input graffiti_pre_image;
     // Epoch key
     signal input reveal_nonce;
     signal input attester_id;
@@ -68,21 +65,21 @@ template ProveReputation(STATE_TREE_DEPTH, EPOCH_KEY_NONCE_PER_EPOCH, SUM_FIELD_
     prove_zero_rep * (prove_zero_rep - 1) === 0;
 
     // then range check the others
-    component min_rep_bits = Num2Bits(64);
+    component min_rep_bits = Num2Bits(254);
     min_rep_bits.in <== min_rep;
+    for (var x = 64; x < 254; x++) {
+        min_rep_bits.out[x] === 0;
+    }
 
-    component max_rep_bits = Num2Bits(64);
+    component max_rep_bits = Num2Bits(254);
     max_rep_bits.in <== max_rep;
+    for (var x = 64; x < 254; x++) {
+        max_rep_bits.out[x] === 0;
+    }
 
     control[1] <== prove_graffiti * 2 ** 131 + prove_zero_rep * 2 ** 130 + prove_max_rep * 2**129 + prove_min_rep * 2**128 + max_rep * 2**64 + min_rep;
 
     /* 1a. Do the epoch key proof, state tree membership */
-
-    component epoch_range_check = Num2Bits(48);
-    epoch_range_check.in <== epoch;
-
-    component attester_id_check = Num2Bits(160);
-    attester_id_check.in <== attester_id;
 
     component epoch_key_prover = EpochKey(
       STATE_TREE_DEPTH,
@@ -112,13 +109,7 @@ template ProveReputation(STATE_TREE_DEPTH, EPOCH_KEY_NONCE_PER_EPOCH, SUM_FIELD_
     /* 2. Check if user has reputation greater than min_rep */
     // if proving min_rep > 0, check if data[0] >= data[1] + min_rep
 
-    component data_0_check = Num2Bits(64);
-    data_0_check.in <== data[0];
-
-    component data_1_check = Num2Bits(64);
-    data_1_check.in <== data[1];
-
-    component min_rep_check = GreaterEqThan(66);
+    component min_rep_check = GreaterEqThan(252);
     min_rep_check.in[0] <== data[0];
     min_rep_check.in[1] <== data[1] + min_rep;
 
@@ -136,7 +127,7 @@ template ProveReputation(STATE_TREE_DEPTH, EPOCH_KEY_NONCE_PER_EPOCH, SUM_FIELD_
     /* 3. Check if user has reputation less than max_rep */
     // if proving max_rep > 0, check if data[1] >= data[0] + max_rep
 
-    component max_rep_check = GreaterEqThan(66);
+    component max_rep_check = GreaterEqThan(252);
     max_rep_check.in[0] <== data[1];
     max_rep_check.in[1] <== data[0] + max_rep;
 
@@ -168,18 +159,21 @@ template ProveReputation(STATE_TREE_DEPTH, EPOCH_KEY_NONCE_PER_EPOCH, SUM_FIELD_
 
     /* End of check 4 */
 
-    /* 3. Prove the graffiti if needed */
+    /* 3. Prove the graffiti pre-image if needed */
 
     component if_not_check_graffiti = IsZero();
     if_not_check_graffiti.in <== prove_graffiti;
 
-    component repl_field_equal = replFieldEqual(REPL_NONCE_BITS);
-    repl_field_equal.in[0] <== graffiti;
-    repl_field_equal.in[1] <== data[SUM_FIELD_COUNT];
+    component graffiti_hasher = Poseidon(1);
+    graffiti_hasher.inputs[0] <== graffiti_pre_image;
+
+    component graffiti_eq = IsEqual();
+    graffiti_eq.in[0] <== graffiti_hasher.out;
+    graffiti_eq.in[1] <== data[SUM_FIELD_COUNT];
 
     component check_graffiti = OR();
     check_graffiti.a <== if_not_check_graffiti.out;
-    check_graffiti.b <== repl_field_equal.out;
+    check_graffiti.b <== graffiti_eq.out;
 
     check_graffiti.out === 1;
 
