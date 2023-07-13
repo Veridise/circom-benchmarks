@@ -6,3 +6,4 @@ tests/Output
 tags/
 *.swp
 .artifacts
+node_modules

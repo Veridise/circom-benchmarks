@@ -36,6 +36,8 @@ Each `test.json` should contain the following:
     "commit": "3fef353",
     "synthetic": false,
     "internal": false,
+    "link_libraries": true,
+	"setup": [],
     "tests": [
         {
             "id": "LessThanPower",
@@ -54,6 +56,8 @@ Each `test.json` should contain the following:
 * `commit`: commit hash of the project for the targeted test case(s)
 * `synthetic`: is the test case a synthetic example or ported from a real-world project
 * `source`: where did we get that benchmark from
+* `link_libraries`: Instructs to the circom compiler if they should link the libraries in `tests/libs` while compiling the circuit. Optional and `true` by default
+* `setup`: Defined a sequence of shell commands that need to be executed before compiling the circuits. Optional and an empty array by default.
 * `tests`: a directory containing details of each sub-test case.
   - `id`: the id of the sub-test case (string)
   - `file`: the relative path to the circom file containing the targeted template
