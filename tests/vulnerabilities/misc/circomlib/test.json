@@ -1,0 +1,479 @@
+{
+    "id": "circomlib",
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/circomlib-cff5ab6",
+	"commit": "4a607996fe54a18b76196caa11a1f271e51a554b",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+        {
+            "id": "AND@gates",
+            "file": "src/AND@gates.circom",
+            "template": "AND",
+            "main": "src/AND@gates.circom",
+            "description": ""
+          },
+          {
+            "id": "AliasCheck@aliascheck",
+            "file": "src/AliasCheck@aliascheck.circom",
+            "template": "AliasCheck",
+            "main": "src/AliasCheck@aliascheck.circom",
+            "description": ""
+          },
+          {
+            "id": "Ark@poseidon",
+            "file": "src/Ark@poseidon.circom",
+            "template": "Ark",
+            "main": "src/Ark@poseidon.circom",
+            "description": ""
+          },
+          {
+            "id": "BabyAdd@babyjub",
+            "file": "src/BabyAdd@babyjub.circom",
+            "template": "BabyAdd",
+            "main": "src/BabyAdd@babyjub.circom",
+            "description": ""
+          },
+          {
+            "id": "BabyCheck@babyjub",
+            "file": "src/BabyCheck@babyjub.circom",
+            "template": "BabyCheck",
+            "main": "src/BabyCheck@babyjub.circom",
+            "description": ""
+          },
+          {
+            "id": "BabyDbl@babyjub",
+            "file": "src/BabyDbl@babyjub.circom",
+            "template": "BabyDbl",
+            "main": "src/BabyDbl@babyjub.circom",
+            "description": ""
+          },
+          {
+            "id": "BabyPbk@babyjub",
+            "file": "src/BabyPbk@babyjub.circom",
+            "template": "BabyPbk",
+            "main": "src/BabyPbk@babyjub.circom",
+            "description": ""
+          },
+          {
+            "id": "BinSub@binsub",
+            "file": "src/BinSub@binsub.circom",
+            "template": "BinSub",
+            "main": "src/BinSub@binsub.circom",
+            "description": ""
+          },
+          {
+            "id": "BinSum@binsum",
+            "file": "src/BinSum@binsum.circom",
+            "template": "BinSum",
+            "main": "src/BinSum@binsum.circom",
+            "description": ""
+          },
+          {
+            "id": "BitElementMulAny@escalarmulany",
+            "file": "src/BitElementMulAny@escalarmulany.circom",
+            "template": "BitElementMulAny",
+            "main": "src/BitElementMulAny@escalarmulany.circom",
+            "description": ""
+          },
+          {
+            "id": "Bits2Num@bitify",
+            "file": "src/Bits2Num@bitify.circom",
+            "template": "Bits2Num",
+            "main": "src/Bits2Num@bitify.circom",
+            "description": ""
+          },
+          {
+            "id": "Bits2Num_strict@bitify",
+            "file": "src/Bits2Num_strict@bitify.circom",
+            "template": "Bits2Num_strict",
+            "main": "src/Bits2Num_strict@bitify.circom",
+            "description": ""
+          },
+          {
+            "id": "Bits2Point@pointbits",
+            "file": "src/Bits2Point@pointbits.circom",
+            "template": "Bits2Point",
+            "main": "src/Bits2Point@pointbits.circom",
+            "description": ""
+          },
+          {
+            "id": "Bits2Point_Strict@pointbits",
+            "file": "src/Bits2Point_Strict@pointbits.circom",
+            "template": "Bits2Point_Strict",
+            "main": "src/Bits2Point_Strict@pointbits.circom",
+            "description": ""
+          },
+          {
+            "id": "CompConstant@compconstant",
+            "file": "src/CompConstant@compconstant.circom",
+            "template": "CompConstant",
+            "main": "src/CompConstant@compconstant.circom",
+            "description": ""
+          },
+          {
+            "id": "Edwards2Montgomery@montgomery",
+            "file": "src/Edwards2Montgomery@montgomery.circom",
+            "template": "Edwards2Montgomery",
+            "main": "src/Edwards2Montgomery@montgomery.circom",
+            "description": ""
+          },
+          {
+            "id": "EscalarMul@escalarmul",
+            "file": "src/EscalarMul@escalarmul.circom",
+            "template": "EscalarMul",
+            "main": "src/EscalarMul@escalarmul.circom",
+            "description": ""
+          },
+          {
+            "id": "EscalarMulAny@escalarmulany",
+            "file": "src/EscalarMulAny@escalarmulany.circom",
+            "template": "EscalarMulAny",
+            "main": "src/EscalarMulAny@escalarmulany.circom",
+            "description": ""
+          },
+          {
+            "id": "EscalarMulFix@escalarmulfix",
+            "file": "src/EscalarMulFix@escalarmulfix.circom",
+            "template": "EscalarMulFix",
+            "main": "src/EscalarMulFix@escalarmulfix.circom",
+            "description": ""
+          },
+          {
+            "id": "EscalarMulWindow@escalarmul",
+            "file": "src/EscalarMulWindow@escalarmul.circom",
+            "template": "EscalarMulWindow",
+            "main": "src/EscalarMulWindow@escalarmul.circom",
+            "description": ""
+          },
+          {
+            "id": "EscalarProduct@multiplexer",
+            "file": "src/EscalarProduct@multiplexer.circom",
+            "template": "EscalarProduct",
+            "main": "src/EscalarProduct@multiplexer.circom",
+            "description": ""
+          },
+          {
+            "id": "ForceEqualIfEnabled@comparators",
+            "file": "src/ForceEqualIfEnabled@comparators.circom",
+            "template": "ForceEqualIfEnabled",
+            "main": "src/ForceEqualIfEnabled@comparators.circom",
+            "description": ""
+          },
+          {
+            "id": "GreaterEqThan@comparators",
+            "file": "src/GreaterEqThan@comparators.circom",
+            "template": "GreaterEqThan",
+            "main": "src/GreaterEqThan@comparators.circom",
+            "description": ""
+          },
+          {
+            "id": "GreaterThan@comparators",
+            "file": "src/GreaterThan@comparators.circom",
+            "template": "GreaterThan",
+            "main": "src/GreaterThan@comparators.circom",
+            "description": ""
+          },
+          {
+            "id": "IsEqual@comparators",
+            "file": "src/IsEqual@comparators.circom",
+            "template": "IsEqual",
+            "main": "src/IsEqual@comparators.circom",
+            "description": ""
+          },
+          {
+            "id": "IsZero@comparators",
+            "file": "src/IsZero@comparators.circom",
+            "template": "IsZero",
+            "main": "src/IsZero@comparators.circom",
+            "description": ""
+          },
+          {
+            "id": "LessEqThan@comparators",
+            "file": "src/LessEqThan@comparators.circom",
+            "template": "LessEqThan",
+            "main": "src/LessEqThan@comparators.circom",
+            "description": ""
+          },
+          {
+            "id": "LessThan@comparators",
+            "file": "src/LessThan@comparators.circom",
+            "template": "LessThan",
+            "main": "src/LessThan@comparators.circom",
+            "description": ""
+          },
+          {
+            "id": "MiMC7@mimc",
+            "file": "src/MiMC7@mimc.circom",
+            "template": "MiMC7",
+            "main": "src/MiMC7@mimc.circom",
+            "description": ""
+          },
+          {
+            "id": "MiMCFeistel@mimcsponge",
+            "file": "src/MiMCFeistel@mimcsponge.circom",
+            "template": "MiMCFeistel",
+            "main": "src/MiMCFeistel@mimcsponge.circom",
+            "description": ""
+          },
+          {
+            "id": "MiMCSponge@mimcsponge",
+            "file": "src/MiMCSponge@mimcsponge.circom",
+            "template": "MiMCSponge",
+            "main": "src/MiMCSponge@mimcsponge.circom",
+            "description": ""
+          },
+          {
+            "id": "Montgomery2Edwards@montgomery",
+            "file": "src/Montgomery2Edwards@montgomery.circom",
+            "template": "Montgomery2Edwards",
+            "main": "src/Montgomery2Edwards@montgomery.circom",
+            "description": ""
+          },
+          {
+            "id": "MontgomeryAdd@montgomery",
+            "file": "src/MontgomeryAdd@montgomery.circom",
+            "template": "MontgomeryAdd",
+            "main": "src/MontgomeryAdd@montgomery.circom",
+            "description": ""
+          },
+          {
+            "id": "MontgomeryDouble@montgomery",
+            "file": "src/MontgomeryDouble@montgomery.circom",
+            "template": "MontgomeryDouble",
+            "main": "src/MontgomeryDouble@montgomery.circom",
+            "description": ""
+          },
+          {
+            "id": "MultiAND@gates",
+            "file": "src/MultiAND@gates.circom",
+            "template": "MultiAND",
+            "main": "src/MultiAND@gates.circom",
+            "description": ""
+          },
+          {
+            "id": "MultiMiMC7@mimc",
+            "file": "src/MultiMiMC7@mimc.circom",
+            "template": "MultiMiMC7",
+            "main": "src/MultiMiMC7@mimc.circom",
+            "description": ""
+          },
+          {
+            "id": "MultiMux1@mux1",
+            "file": "src/MultiMux1@mux1.circom",
+            "template": "MultiMux1",
+            "main": "src/MultiMux1@mux1.circom",
+            "description": ""
+          },
+          {
+            "id": "MultiMux2@mux2",
+            "file": "src/MultiMux2@mux2.circom",
+            "template": "MultiMux2",
+            "main": "src/MultiMux2@mux2.circom",
+            "description": ""
+          },
+          {
+            "id": "MultiMux3@mux3",
+            "file": "src/MultiMux3@mux3.circom",
+            "template": "MultiMux3",
+            "main": "src/MultiMux3@mux3.circom",
+            "description": ""
+          },
+          {
+            "id": "MultiMux4@mux4",
+            "file": "src/MultiMux4@mux4.circom",
+            "template": "MultiMux4",
+            "main": "src/MultiMux4@mux4.circom",
+            "description": ""
+          },
+          {
+            "id": "Multiplexer@multiplexer",
+            "file": "src/Multiplexer@multiplexer.circom",
+            "template": "Multiplexer",
+            "main": "src/Multiplexer@multiplexer.circom",
+            "description": ""
+          },
+          {
+            "id": "Multiplexor2@escalarmulany",
+            "file": "src/Multiplexor2@escalarmulany.circom",
+            "template": "Multiplexor2",
+            "main": "src/Multiplexor2@escalarmulany.circom",
+            "description": ""
+          },
+          {
+            "id": "Mux1@mux1",
+            "file": "src/Mux1@mux1.circom",
+            "template": "Mux1",
+            "main": "src/Mux1@mux1.circom",
+            "description": ""
+          },
+          {
+            "id": "Mux2@mux2",
+            "file": "src/Mux2@mux2.circom",
+            "template": "Mux2",
+            "main": "src/Mux2@mux2.circom",
+            "description": ""
+          },
+          {
+            "id": "Mux3@mux3",
+            "file": "src/Mux3@mux3.circom",
+            "template": "Mux3",
+            "main": "src/Mux3@mux3.circom",
+            "description": ""
+          },
+          {
+            "id": "Mux4@mux4",
+            "file": "src/Mux4@mux4.circom",
+            "template": "Mux4",
+            "main": "src/Mux4@mux4.circom",
+            "description": ""
+          },
+          {
+            "id": "NAND@gates",
+            "file": "src/NAND@gates.circom",
+            "template": "NAND",
+            "main": "src/NAND@gates.circom",
+            "description": ""
+          },
+          {
+            "id": "NOR@gates",
+            "file": "src/NOR@gates.circom",
+            "template": "NOR",
+            "main": "src/NOR@gates.circom",
+            "description": ""
+          },
+          {
+            "id": "NOT@gates",
+            "file": "src/NOT@gates.circom",
+            "template": "NOT",
+            "main": "src/NOT@gates.circom",
+            "description": ""
+          },
+          {
+            "id": "Num2Bits@bitify",
+            "file": "src/Num2Bits@bitify.circom",
+            "template": "Num2Bits",
+            "main": "src/Num2Bits@bitify.circom",
+            "description": ""
+          },
+          {
+            "id": "Num2BitsNeg@bitify",
+            "file": "src/Num2BitsNeg@bitify.circom",
+            "template": "Num2BitsNeg",
+            "main": "src/Num2BitsNeg@bitify.circom",
+            "description": ""
+          },
+          {
+            "id": "Num2Bits_strict@bitify",
+            "file": "src/Num2Bits_strict@bitify.circom",
+            "template": "Num2Bits_strict",
+            "main": "src/Num2Bits_strict@bitify.circom",
+            "description": ""
+          },
+          {
+            "id": "OR@gates",
+            "file": "src/OR@gates.circom",
+            "template": "OR",
+            "main": "src/OR@gates.circom",
+            "description": ""
+          },
+          {
+            "id": "Pedersen@pedersen",
+            "file": "src/Pedersen@pedersen.circom",
+            "template": "Pedersen",
+            "main": "src/Pedersen@pedersen.circom",
+            "description": ""
+          },
+          {
+            "id": "Pedersen@pedersen_old",
+            "file": "src/Pedersen@pedersen_old.circom",
+            "template": "Pedersen",
+            "main": "src/Pedersen@pedersen_old.circom",
+            "description": ""
+          },
+          {
+            "id": "Point2Bits@pointbits",
+            "file": "src/Point2Bits@pointbits.circom",
+            "template": "Point2Bits",
+            "main": "src/Point2Bits@pointbits.circom",
+            "description": ""
+          },
+          {
+            "id": "Point2Bits_Strict@pointbits",
+            "file": "src/Point2Bits_Strict@pointbits.circom",
+            "template": "Point2Bits_Strict",
+            "main": "src/Point2Bits_Strict@pointbits.circom",
+            "description": ""
+          },
+          {
+            "id": "Poseidon@poseidon",
+            "file": "src/Poseidon@poseidon.circom",
+            "template": "Poseidon",
+            "main": "src/Poseidon@poseidon.circom",
+            "description": ""
+          },
+          {
+            "id": "Segment@pedersen",
+            "file": "src/Segment@pedersen.circom",
+            "template": "Segment",
+            "main": "src/Segment@pedersen.circom",
+            "description": ""
+          },
+          {
+            "id": "SegmentMulAny@escalarmulany",
+            "file": "src/SegmentMulAny@escalarmulany.circom",
+            "template": "SegmentMulAny",
+            "main": "src/SegmentMulAny@escalarmulany.circom",
+            "description": ""
+          },
+          {
+            "id": "SegmentMulFix@escalarmulfix",
+            "file": "src/SegmentMulFix@escalarmulfix.circom",
+            "template": "SegmentMulFix",
+            "main": "src/SegmentMulFix@escalarmulfix.circom",
+            "description": ""
+          },
+          {
+            "id": "Sigma@poseidon",
+            "file": "src/Sigma@poseidon.circom",
+            "template": "Sigma",
+            "main": "src/Sigma@poseidon.circom",
+            "description": ""
+          },
+          {
+            "id": "Sign@sign",
+            "file": "src/Sign@sign.circom",
+            "template": "Sign",
+            "main": "src/Sign@sign.circom",
+            "description": ""
+          },
+          {
+            "id": "Switcher@switcher",
+            "file": "src/Switcher@switcher.circom",
+            "template": "Switcher",
+            "main": "src/Switcher@switcher.circom",
+            "description": ""
+          },
+          {
+            "id": "Window4@pedersen",
+            "file": "src/Window4@pedersen.circom",
+            "template": "Window4",
+            "main": "src/Window4@pedersen.circom",
+            "description": ""
+          },
+          {
+            "id": "WindowMulFix@escalarmulfix",
+            "file": "src/WindowMulFix@escalarmulfix.circom",
+            "template": "WindowMulFix",
+            "main": "src/WindowMulFix@escalarmulfix.circom",
+            "description": ""
+          },
+          {
+            "id": "XOR@gates",
+            "file": "src/XOR@gates.circom",
+            "template": "XOR",
+            "main": "src/XOR@gates.circom",
+            "description": ""
+          }
+    ]
+}

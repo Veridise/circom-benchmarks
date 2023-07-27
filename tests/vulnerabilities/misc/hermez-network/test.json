@@ -1,0 +1,88 @@
+{
+    "id": "hermez-network",
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/hermez-network-9a696e3-fixed",
+	"commit": "4a607996fe54a18b76196caa11a1f271e51a554b",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+        {
+          "id": "test-balance-updater",
+          "file": "src/test-balance-updater.circom",
+          "template": "test-balance-updater.circom",
+          "main": "src/test-balance-updater.circom",
+          "description": ""
+        },
+        {
+          "id": "test-compute-fee",
+          "file": "src/test-compute-fee.circom",
+          "template": "test-compute-fee.circom",
+          "main": "src/test-compute-fee.circom",
+          "description": ""
+        },
+        {
+          "id": "test-decode-tx",
+          "file": "src/test-decode-tx.circom",
+          "template": "test-decode-tx.circom",
+          "main": "src/test-decode-tx.circom",
+          "description": ""
+        },
+        {
+          "id": "test-fee-accumulator",
+          "file": "src/test-fee-accumulator.circom",
+          "template": "test-fee-accumulator.circom",
+          "main": "src/test-fee-accumulator.circom",
+          "description": ""
+        },
+        {
+          "id": "test-fee-tx",
+          "file": "src/test-fee-tx.circom",
+          "template": "test-fee-tx.circom",
+          "main": "src/test-fee-tx.circom",
+          "description": ""
+        },
+        {
+          "id": "test-hash-inputs",
+          "file": "src/test-hash-inputs.circom",
+          "template": "test-hash-inputs.circom",
+          "main": "src/test-hash-inputs.circom",
+          "description": ""
+        },
+        {
+          "id": "test-rollup-main-L1",
+          "file": "src/test-rollup-main-L1.circom",
+          "template": "test-rollup-main-L1.circom",
+          "main": "src/test-rollup-main-L1.circom",
+          "description": ""
+        },
+        {
+          "id": "test-rollup-tx-states",
+          "file": "src/test-rollup-tx-states.circom",
+          "template": "test-rollup-tx-states.circom",
+          "main": "src/test-rollup-tx-states.circom",
+          "description": ""
+        },
+        {
+          "id": "test-rollup-tx",
+          "file": "src/test-rollup-tx.circom",
+          "template": "test-rollup-tx.circom",
+          "main": "src/test-rollup-tx.circom",
+          "description": ""
+        },
+        {
+          "id": "test-rq-tx-verifier",
+          "file": "src/test-rq-tx-verifier.circom",
+          "template": "test-rq-tx-verifier.circom",
+          "main": "src/test-rq-tx-verifier.circom",
+          "description": ""
+        },
+        {
+          "id": "test-withdraw",
+          "file": "src/test-withdraw.circom",
+          "template": "test-withdraw.circom",
+          "main": "src/test-withdraw.circom",
+          "description": ""
+        }
+      ]
+      
+}

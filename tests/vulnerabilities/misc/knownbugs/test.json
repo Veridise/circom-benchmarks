@@ -1,0 +1,88 @@
+{
+    "id": "knownbugs",
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/knownbugs",
+	"commit": "4a607996fe54a18b76196caa11a1f271e51a554b",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+        {
+          "id": "BigModOld@circom-pairing@n=8@k=2",
+          "file": "src/BigModOld@circom-pairing@n=8@k=2.circom",
+          "template": "BigModOld",
+          "main": "src/BigModOld@circom-pairing@n=8@k=2.circom",
+          "description": ""
+        },
+        {
+          "id": "BinSum@circomspect@n=2@ops=2",
+          "file": "src/BinSum@circomspect@n=2@ops=2.circom",
+          "template": "BinSum",
+          "main": "src/BinSum@circomspect@n=2@ops=2.circom",
+          "description": ""
+        },
+        {
+          "id": "Decoder@multiplexer",
+          "file": "src/Decoder@multiplexer.circom",
+          "template": "Decoder",
+          "main": "src/Decoder@multiplexer.circom",
+          "description": ""
+        },
+        {
+          "id": "DivZero@circomspect",
+          "file": "src/DivZero@circomspect.circom",
+          "template": "DivZero",
+          "main": "src/DivZero@circomspect.circom",
+          "description": ""
+        },
+        {
+          "id": "ProcessMessages@MACI@msgBits=64",
+          "file": "src/ProcessMessages@MACI@msgBits=64.circom",
+          "template": "ProcessMessages",
+          "main": "src/ProcessMessages@MACI@msgBits=64.circom",
+          "description": ""
+        },
+        {
+          "id": "RangeProofs@EF@bits=8@max=65535",
+          "file": "src/RangeProofs@EF@bits=8@max=65535.circom",
+          "template": "RangeProofs",
+          "main": "src/RangeProofs@EF@bits=8@max=65535.circom",
+          "description": ""
+        },
+        {
+          "id": "SingleAssignment0@inspire",
+          "file": "src/SingleAssignment0@inspire.circom",
+          "template": "SingleAssignment0",
+          "main": "src/SingleAssignment0@inspire.circom",
+          "description": ""
+        },
+        {
+          "id": "SingleAssignment1@inspire",
+          "file": "src/SingleAssignment1@inspire.circom",
+          "template": "SingleAssignment1",
+          "main": "src/SingleAssignment1@inspire.circom",
+          "description": ""
+        },
+        {
+          "id": "UnconstrainedOutput@inspire",
+          "file": "src/UnconstrainedOutput@inspire.circom",
+          "template": "UnconstrainedOutput",
+          "main": "src/UnconstrainedOutput@inspire.circom",
+          "description": ""
+        },
+        {
+          "id": "UnusedCompOutput@inspire",
+          "file": "src/UnusedCompOutput@inspire.circom",
+          "template": "UnusedCompOutput",
+          "main": "src/UnusedCompOutput@inspire.circom",
+          "description": ""
+        },
+        {
+          "id": "UnusedPubInput@EF",
+          "file": "src/UnusedPubInput@EF.circom",
+          "template": "UnusedPubInput",
+          "main": "src/UnusedPubInput@EF.circom",
+          "description": ""
+        }
+      ]
+      
+}

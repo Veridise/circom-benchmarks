@@ -1,0 +1,95 @@
+{
+    "id": "circom-matrix",
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/circom-matrix",
+	"commit": "4a607996fe54a18b76196caa11a1f271e51a554b",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+        {
+          "id": "matAdd_test",
+          "file": "src/matAdd_test.circom",
+          "template": "matAdd_test.circom",
+          "main": "src/matAdd_test.circom",
+          "description": ""
+        },
+        {
+          "id": "matElemMul_test",
+          "file": "src/matElemMul_test.circom",
+          "template": "matElemMul_test.circom",
+          "main": "src/matElemMul_test.circom",
+          "description": ""
+        },
+        {
+          "id": "matElemPow_test",
+          "file": "src/matElemPow_test.circom",
+          "template": "matElemPow_test.circom",
+          "main": "src/matElemPow_test.circom",
+          "description": ""
+        },
+        {
+          "id": "matMul_test",
+          "file": "src/matMul_test.circom",
+          "template": "matMul_test.circom",
+          "main": "src/matMul_test.circom",
+          "description": ""
+        },
+        {
+          "id": "matPow_test",
+          "file": "src/matPow_test.circom",
+          "template": "matPow_test.circom",
+          "main": "src/matPow_test.circom",
+          "description": ""
+        },
+        {
+          "id": "matScalarAdd_test",
+          "file": "src/matScalarAdd_test.circom",
+          "template": "matScalarAdd_test.circom",
+          "main": "src/matScalarAdd_test.circom",
+          "description": ""
+        },
+        {
+          "id": "matScalarMul_test",
+          "file": "src/matScalarMul_test.circom",
+          "template": "matScalarMul_test.circom",
+          "main": "src/matScalarMul_test.circom",
+          "description": ""
+        },
+        {
+          "id": "matScalarSub_test",
+          "file": "src/matScalarSub_test.circom",
+          "template": "matScalarSub_test.circom",
+          "main": "src/matScalarSub_test.circom",
+          "description": ""
+        },
+        {
+          "id": "matSub_test",
+          "file": "src/matSub_test.circom",
+          "template": "matSub_test.circom",
+          "main": "src/matSub_test.circom",
+          "description": ""
+        },
+        {
+          "id": "outer_test",
+          "file": "src/outer_test.circom",
+          "template": "outer_test.circom",
+          "main": "src/outer_test.circom",
+          "description": ""
+        },
+        {
+          "id": "trace_test",
+          "file": "src/trace_test.circom",
+          "template": "trace_test.circom",
+          "main": "src/trace_test.circom",
+          "description": ""
+        },
+        {
+          "id": "tranpose_test",
+          "file": "src/tranpose_test.circom",
+          "template": "tranpose_test.circom",
+          "main": "src/tranpose_test.circom",
+          "description": ""
+        }
+      ]
+      
+}

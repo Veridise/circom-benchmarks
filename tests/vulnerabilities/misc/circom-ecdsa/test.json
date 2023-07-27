@@ -1,0 +1,123 @@
+{
+    "id": "circom-ecdsa",
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/circom-ecdsa",
+	"commit": "4a607996fe54a18b76196caa11a1f271e51a554b",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+    {
+      "id": "ECDSAVerifyNoPubkeyCheck@circom-ecdsa@n=64@k=4",
+      "file": "src/ECDSAVerifyNoPubkeyCheck@circom-ecdsa@n=64@k=4.circom",
+      "template": "ECDSAVerifyNoPubkeyCheck",
+      "main": "src/ECDSAVerifyNoPubkeyCheck@circom-ecdsa@n=64@k=4.circom",
+      "description": ""
+    },
+    {
+      "id": "bigadd@circom-ecdsa@n=1@k=5",
+      "file": "src/bigadd@circom-ecdsa@n=1@k=5.circom",
+      "template": "bigadd",
+      "main": "src/bigadd@circom-ecdsa@n=1@k=5.circom",
+      "description": ""
+    },
+    {
+      "id": "bigadd@circom-ecdsa@n=2@k=3",
+      "file": "src/bigadd@circom-ecdsa@n=2@k=3.circom",
+      "template": "bigadd",
+      "main": "src/bigadd@circom-ecdsa@n=2@k=3.circom",
+      "description": ""
+    },
+    {
+      "id": "biglessthan@circom-ecdsa@n=2@k=3",
+      "file": "src/biglessthan@circom-ecdsa@n=2@k=3.circom",
+      "template": "biglessthan",
+      "main": "src/biglessthan@circom-ecdsa@n=2@k=3.circom",
+      "description": ""
+    },
+    {
+      "id": "bigmod@circom-ecdsa@n=2@k=2",
+      "file": "src/bigmod@circom-ecdsa@n=2@k=2.circom",
+      "template": "bigmod",
+      "main": "src/bigmod@circom-ecdsa@n=2@k=2.circom",
+      "description": ""
+    },
+    {
+      "id": "bigmod@circom-ecdsa@n=3@k=2",
+      "file": "src/bigmod@circom-ecdsa@n=3@k=2.circom",
+      "template": "bigmod",
+      "main": "src/bigmod@circom-ecdsa@n=3@k=2.circom",
+      "description": ""
+    },
+    {
+      "id": "bigmult@circom-ecdsa@n=2@k=1",
+      "file": "src/bigmult@circom-ecdsa@n=2@k=1.circom",
+      "template": "bigmult",
+      "main": "src/bigmult@circom-ecdsa@n=2@k=1.circom",
+      "description": ""
+    },
+    {
+      "id": "bigmult@circom-ecdsa@n=2@k=2",
+      "file": "src/bigmult@circom-ecdsa@n=2@k=2.circom",
+      "template": "bigmult",
+      "main": "src/bigmult@circom-ecdsa@n=2@k=2.circom",
+      "description": ""
+    },
+    {
+      "id": "bigmult@circom-ecdsa@n=2@k=3",
+      "file": "src/bigmult@circom-ecdsa@n=2@k=3.circom",
+      "template": "bigmult",
+      "main": "src/bigmult@circom-ecdsa@n=2@k=3.circom",
+      "description": ""
+    },
+    {
+      "id": "bigsub@circom-ecdsa@n=1@k=5",
+      "file": "src/bigsub@circom-ecdsa@n=1@k=5.circom",
+      "template": "bigsub",
+      "main": "src/bigsub@circom-ecdsa@n=1@k=5.circom",
+      "description": ""
+    },
+    {
+      "id": "bigsub@circom-ecdsa@n=2@k=3",
+      "file": "src/bigsub@circom-ecdsa@n=2@k=3.circom",
+      "template": "bigsub",
+      "main": "src/bigsub@circom-ecdsa@n=2@k=3.circom",
+      "description": ""
+    },
+    {
+      "id": "bigsubmodp@circom-ecdsa@n=3@k=2",
+      "file": "src/bigsubmodp@circom-ecdsa@n=3@k=2.circom",
+      "template": "bigsubmodp",
+      "main": "src/bigsubmodp@circom-ecdsa@n=3@k=2.circom",
+      "description": ""
+    },
+    {
+      "id": "secp256k1AddUnequal@circom-ecdsa@n=64@k=4",
+      "file": "src/secp256k1AddUnequal@circom-ecdsa@n=64@k=4.circom",
+      "template": "secp256k1AddUnequal",
+      "main": "src/secp256k1AddUnequal@circom-ecdsa@n=64@k=4.circom",
+      "description": ""
+    },
+    {
+      "id": "secp256k1Double@circom-ecdsa@n=64@k=4",
+      "file": "src/secp256k1Double@circom-ecdsa@n=64@k=4.circom",
+      "template": "secp256k1Double",
+      "main": "src/secp256k1Double@circom-ecdsa@n=64@k=4.circom",
+      "description": ""
+    },
+    {
+      "id": "secp256k1Poc@circom-ecdsa@n=64@k=4",
+      "file": "src/secp256k1Poc@circom-ecdsa@n=64@k=4.circom",
+      "template": "secp256k1Poc",
+      "main": "src/secp256k1Poc@circom-ecdsa@n=64@k=4.circom",
+      "description": ""
+    },
+    {
+      "id": "secp256k1ScalarMult@circom-ecdsa@n=64@k=4",
+      "file": "src/secp256k1ScalarMult@circom-ecdsa@n=64@k=4.circom",
+      "template": "secp256k1ScalarMult",
+      "main": "src/secp256k1ScalarMult@circom-ecdsa@n=64@k=4.circom",
+      "description": ""
+    }
+  ]
+  
+}

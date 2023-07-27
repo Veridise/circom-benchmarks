@@ -1,0 +1,74 @@
+{
+    "id": "darkforest-eth",
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/darkforest-eth-9033eaf",
+	"commit": "4a607996fe54a18b76196caa11a1f271e51a554b",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+        {
+          "id": "CalculateTotal",
+          "file": "src/CalculateTotal.circom",
+          "template": "CalculateTotal.circom",
+          "main": "src/CalculateTotal.circom",
+          "description": ""
+        },
+        {
+          "id": "QuinSelector",
+          "file": "src/QuinSelector.circom",
+          "template": "QuinSelector.circom",
+          "main": "src/QuinSelector.circom",
+          "description": ""
+        },
+        {
+          "id": "biomebase",
+          "file": "src/biomebase.circom",
+          "template": "biomebase.circom",
+          "main": "src/biomebase.circom",
+          "description": ""
+        },
+        {
+          "id": "init",
+          "file": "src/init.circom",
+          "template": "init.circom",
+          "main": "src/init.circom",
+          "description": ""
+        },
+        {
+          "id": "move",
+          "file": "src/move.circom",
+          "template": "move.circom",
+          "main": "src/move.circom",
+          "description": ""
+        },
+        {
+          "id": "perlin",
+          "file": "src/perlin.circom",
+          "template": "perlin.circom",
+          "main": "src/perlin.circom",
+          "description": ""
+        },
+        {
+          "id": "range_proof",
+          "file": "src/range_proof.circom",
+          "template": "range_proof.circom",
+          "main": "src/range_proof.circom",
+          "description": ""
+        },
+        {
+          "id": "reveal",
+          "file": "src/reveal.circom",
+          "template": "reveal.circom",
+          "main": "src/reveal.circom",
+          "description": ""
+        },
+        {
+          "id": "whitelist",
+          "file": "src/whitelist.circom",
+          "template": "whitelist.circom",
+          "main": "src/whitelist.circom",
+          "description": ""
+        }
+      ]
+      
+}
