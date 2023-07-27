@@ -8,7 +8,7 @@
         "bigComparators.circom": {
             "UpperLessThan": {
                 "args": ["n"],
-                "values" : {"n":252},
+                "values" : {"n":25},
                 "signals": [
                     {
                         "name": "in",

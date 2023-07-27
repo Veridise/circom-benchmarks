@@ -12,7 +12,7 @@
                     "msgBits"
                 ],
                 "values" : {
-                    "msgBits": 32
+                    "msgBits": 256
                 },
                 "signals": [
                     {
