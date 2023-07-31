@@ -62,7 +62,7 @@
   "Bits2Point@pointbits": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Bits2Point@pointbits.circom",
     "include_path": "../../tests/libs",
-    "skip": true
+    "skip": false
   },
   "Bits2Point_Strict@pointbits": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Bits2Point_Strict@pointbits.circom",
@@ -77,7 +77,7 @@
   "Edwards2Montgomery@montgomery": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Edwards2Montgomery@montgomery.circom",
     "include_path": "../../tests/libs",
-    "skip": true
+    "skip": false
   },
   "EscalarMul@escalarmul": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/EscalarMul@escalarmul.circom",
@@ -137,7 +137,7 @@
   "LessThan@comparators": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/LessThan@comparators.circom",
     "include_path": "../../tests/libs",
-    "skip": false
+    "skip": true
   },
   "MiMC7@mimc": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MiMC7@mimc.circom",
@@ -157,17 +157,17 @@
   "Montgomery2Edwards@montgomery": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Montgomery2Edwards@montgomery.circom",
     "include_path": "../../tests/libs",
-    "skip": true
+    "skip": false
   },
   "MontgomeryAdd@montgomery": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MontgomeryAdd@montgomery.circom",
     "include_path": "../../tests/libs",
-    "skip": true
+    "skip": false
   },
   "MontgomeryDouble@montgomery": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MontgomeryDouble@montgomery.circom",
     "include_path": "../../tests/libs",
-    "skip": true
+    "skip": false
   },
   "MultiAND@gates": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MultiAND@gates.circom",
@@ -202,7 +202,7 @@
   "Multiplexer@multiplexer": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Multiplexer@multiplexer.circom",
     "include_path": "../../tests/libs",
-    "skip": true
+    "skip": false
   },
   "Multiplexor2@escalarmulany": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Multiplexor2@escalarmulany.circom",
@@ -277,7 +277,7 @@
   "Point2Bits@pointbits": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Point2Bits@pointbits.circom",
     "include_path": "../../tests/libs",
-    "skip": true
+    "skip": false
   },
   "Point2Bits_Strict@pointbits": {
     "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Point2Bits_Strict@pointbits.circom",
