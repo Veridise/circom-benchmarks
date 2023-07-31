@@ -1,0 +1,200 @@
+{
+    "id": "ed25519",
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/ed25519-099d19c",
+	"commit": "4a607996fe54a18b76196caa11a1f271e51a554b",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+        {
+          "id": "batchverify",
+          "file": "src/batchverify.circom",
+          "template": "batchverify.circom",
+          "main": "src/batchverify.circom",
+          "description": ""
+        },
+        {
+          "id": "binadd1",
+          "file": "src/binadd1.circom",
+          "template": "binadd1.circom",
+          "main": "src/binadd1.circom",
+          "description": ""
+        },
+        {
+          "id": "binadd2",
+          "file": "src/binadd2.circom",
+          "template": "binadd2.circom",
+          "main": "src/binadd2.circom",
+          "description": ""
+        },
+        {
+          "id": "binaddirr",
+          "file": "src/binaddirr.circom",
+          "template": "binaddirr.circom",
+          "main": "src/binaddirr.circom",
+          "description": ""
+        },
+        {
+          "id": "binmul1",
+          "file": "src/binmul1.circom",
+          "template": "binmul1.circom",
+          "main": "src/binmul1.circom",
+          "description": ""
+        },
+        {
+          "id": "binmulfast1",
+          "file": "src/binmulfast1.circom",
+          "template": "binmulfast1.circom",
+          "main": "src/binmulfast1.circom",
+          "description": ""
+        },
+        {
+          "id": "binmulfast51",
+          "file": "src/binmulfast51.circom",
+          "template": "binmulfast51.circom",
+          "main": "src/binmulfast51.circom",
+          "description": ""
+        },
+        {
+          "id": "binmulfast51_1",
+          "file": "src/binmulfast51_1.circom",
+          "template": "binmulfast51_1.circom",
+          "main": "src/binmulfast51_1.circom",
+          "description": ""
+        },
+        {
+          "id": "binmulfast51_2",
+          "file": "src/binmulfast51_2.circom",
+          "template": "binmulfast51_2.circom",
+          "main": "src/binmulfast51_2.circom",
+          "description": ""
+        },
+        {
+          "id": "binmullessthan51",
+          "file": "src/binmullessthan51.circom",
+          "template": "binmullessthan51.circom",
+          "main": "src/binmullessthan51.circom",
+          "description": ""
+        },
+        {
+          "id": "binsub1",
+          "file": "src/binsub1.circom",
+          "template": "binsub1.circom",
+          "main": "src/binsub1.circom",
+          "description": ""
+        },
+        {
+          "id": "chunkedadd",
+          "file": "src/chunkedadd.circom",
+          "template": "chunkedadd.circom",
+          "main": "src/chunkedadd.circom",
+          "description": ""
+        },
+        {
+          "id": "chunkedadd1",
+          "file": "src/chunkedadd1.circom",
+          "template": "chunkedadd1.circom",
+          "main": "src/chunkedadd1.circom",
+          "description": ""
+        },
+        {
+          "id": "chunkedmodulus",
+          "file": "src/chunkedmodulus.circom",
+          "template": "chunkedmodulus.circom",
+          "main": "src/chunkedmodulus.circom",
+          "description": ""
+        },
+        {
+          "id": "chunkify1",
+          "file": "src/chunkify1.circom",
+          "template": "chunkify1.circom",
+          "main": "src/chunkify1.circom",
+          "description": ""
+        },
+        {
+          "id": "inversemodulo1",
+          "file": "src/inversemodulo1.circom",
+          "template": "inversemodulo1.circom",
+          "main": "src/inversemodulo1.circom",
+          "description": ""
+        },
+        {
+          "id": "modinv",
+          "file": "src/modinv.circom",
+          "template": "modinv.circom",
+          "main": "src/modinv.circom",
+          "description": ""
+        },
+        {
+          "id": "modulus0",
+          "file": "src/modulus0.circom",
+          "template": "modulus0.circom",
+          "main": "src/modulus0.circom",
+          "description": ""
+        },
+        {
+          "id": "modulus1",
+          "file": "src/modulus1.circom",
+          "template": "modulus1.circom",
+          "main": "src/modulus1.circom",
+          "description": ""
+        },
+        {
+          "id": "modulus2",
+          "file": "src/modulus2.circom",
+          "template": "modulus2.circom",
+          "main": "src/modulus2.circom",
+          "description": ""
+        },
+        {
+          "id": "modulusagainst2p",
+          "file": "src/modulusagainst2p.circom",
+          "template": "modulusagainst2p.circom",
+          "main": "src/modulusagainst2p.circom",
+          "description": ""
+        },
+        {
+          "id": "modulusq1",
+          "file": "src/modulusq1.circom",
+          "template": "modulusq1.circom",
+          "main": "src/modulusq1.circom",
+          "description": ""
+        },
+        {
+          "id": "modulusq2",
+          "file": "src/modulusq2.circom",
+          "template": "modulusq2.circom",
+          "main": "src/modulusq2.circom",
+          "description": ""
+        },
+        {
+          "id": "point-addition51",
+          "file": "src/point-addition51.circom",
+          "template": "point-addition51.circom",
+          "main": "src/point-addition51.circom",
+          "description": ""
+        },
+        {
+          "id": "pointcompress",
+          "file": "src/pointcompress.circom",
+          "template": "pointcompress.circom",
+          "main": "src/pointcompress.circom",
+          "description": ""
+        },
+        {
+          "id": "scalarmul",
+          "file": "src/scalarmul.circom",
+          "template": "scalarmul.circom",
+          "main": "src/scalarmul.circom",
+          "description": ""
+        },
+        {
+          "id": "verify",
+          "file": "src/verify.circom",
+          "template": "verify.circom",
+          "main": "src/verify.circom",
+          "description": ""
+        }
+      ]
+      
+}

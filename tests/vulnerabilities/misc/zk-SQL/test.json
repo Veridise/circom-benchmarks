@@ -1,0 +1,53 @@
+{
+    "id": "zk-SQL",
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/zk-SQL-4c3626d",
+	"commit": "4a607996fe54a18b76196caa11a1f271e51a554b",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+        {
+          "id": "delete",
+          "file": "src/delete.circom",
+          "template": "delete.circom",
+          "main": "src/delete.circom",
+          "description": ""
+        },
+        {
+          "id": "hashTable",
+          "file": "src/hashTable.circom",
+          "template": "hashTable.circom",
+          "main": "src/hashTable.circom",
+          "description": ""
+        },
+        {
+          "id": "insert",
+          "file": "src/insert.circom",
+          "template": "insert.circom",
+          "main": "src/insert.circom",
+          "description": ""
+        },
+        {
+          "id": "select",
+          "file": "src/select.circom",
+          "template": "select.circom",
+          "main": "src/select.circom",
+          "description": ""
+        },
+        {
+          "id": "update",
+          "file": "src/update.circom",
+          "template": "update.circom",
+          "main": "src/update.circom",
+          "description": ""
+        },
+        {
+          "id": "utils",
+          "file": "src/utils.circom",
+          "template": "utils.circom",
+          "main": "src/utils.circom",
+          "description": ""
+        }
+      ]
+      
+}

@@ -1,0 +1,13 @@
+project,detector,file,function,info
+Edwards2Montgomery@montgomery,zk-divide-by-zero,montgomery.circom,Edwards2Montgomery,in[0]
+Edwards2Montgomery@montgomery,zk-divide-by-zero,montgomery.circom,Edwards2Montgomery,in[1]
+Montgomery2Edwards@montgomery,zk-divide-by-zero,montgomery.circom,Montgomery2Edwards,in[0]
+Montgomery2Edwards@montgomery,zk-divide-by-zero,montgomery.circom,Montgomery2Edwards,in[1]
+MontgomeryAdd@montgomery,zk-divide-by-zero,montgomery.circom,MontgomeryAdd,in1[0]
+MontgomeryAdd@montgomery,zk-divide-by-zero,montgomery.circom,MontgomeryAdd,in2[0]
+MontgomeryDouble@montgomery,zk-divide-by-zero,montgomery.circom,MontgomeryDouble,in[1]
+Multiplexer@multiplexer,non-det-wit,multiplexer.circom,Decoder,inp
+Bits2Point@pointbits,uc-inputs,pointbits.circom,Bits2Point,in[0..256]
+Bits2Point@pointbits,uc-outputs,pointbits.circom,Bits2Point,out[0..2]
+Point2Bits@pointbits,uc-inputs,pointbits.circom,Point2Bits,in[0..2]
+Point2Bits@pointbits,uc-outputs,pointbits.circom,Point2Bits,out[0..256]

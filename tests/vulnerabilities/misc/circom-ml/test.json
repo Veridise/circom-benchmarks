@@ -1,0 +1,95 @@
+{
+    "id": "circom-ml",
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/circom-ml",
+	"commit": "4a607996fe54a18b76196caa11a1f271e51a554b",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+        {
+          "id": "Conv1D_test",
+          "file": "src/Conv1D_test.circom",
+          "template": "Conv1D_test.circom",
+          "main": "src/Conv1D_test.circom",
+          "description": ""
+        },
+        {
+          "id": "Conv2D_stride_test",
+          "file": "src/Conv2D_stride_test.circom",
+          "template": "Conv2D_stride_test.circom",
+          "main": "src/Conv2D_stride_test.circom",
+          "description": ""
+        },
+        {
+          "id": "Conv2D_test",
+          "file": "src/Conv2D_test.circom",
+          "template": "Conv2D_test.circom",
+          "main": "src/Conv2D_test.circom",
+          "description": ""
+        },
+        {
+          "id": "Dense_test",
+          "file": "src/Dense_test.circom",
+          "template": "Dense_test.circom",
+          "main": "src/Dense_test.circom",
+          "description": ""
+        },
+        {
+          "id": "IsNegative_test",
+          "file": "src/IsNegative_test.circom",
+          "template": "IsNegative_test.circom",
+          "main": "src/IsNegative_test.circom",
+          "description": ""
+        },
+        {
+          "id": "IsPositive_test",
+          "file": "src/IsPositive_test.circom",
+          "template": "IsPositive_test.circom",
+          "main": "src/IsPositive_test.circom",
+          "description": ""
+        },
+        {
+          "id": "ReLU_test",
+          "file": "src/ReLU_test.circom",
+          "template": "ReLU_test.circom",
+          "main": "src/ReLU_test.circom",
+          "description": ""
+        },
+        {
+          "id": "SumPooling2D_test",
+          "file": "src/SumPooling2D_test.circom",
+          "template": "SumPooling2D_test.circom",
+          "main": "src/SumPooling2D_test.circom",
+          "description": ""
+        },
+        {
+          "id": "mnist_convnet_test",
+          "file": "src/mnist_convnet_test.circom",
+          "template": "mnist_convnet_test.circom",
+          "main": "src/mnist_convnet_test.circom",
+          "description": ""
+        },
+        {
+          "id": "mnist_poly_test",
+          "file": "src/mnist_poly_test.circom",
+          "template": "mnist_poly_test.circom",
+          "main": "src/mnist_poly_test.circom",
+          "description": ""
+        },
+        {
+          "id": "mnist_test",
+          "file": "src/mnist_test.circom",
+          "template": "mnist_test.circom",
+          "main": "src/mnist_test.circom",
+          "description": ""
+        },
+        {
+          "id": "model1_test",
+          "file": "src/model1_test.circom",
+          "template": "model1_test.circom",
+          "main": "src/model1_test.circom",
+          "description": ""
+        }
+      ]
+      
+}

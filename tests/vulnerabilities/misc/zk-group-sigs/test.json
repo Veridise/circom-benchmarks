@@ -1,0 +1,32 @@
+{
+    "id": "zk-group-sigs",
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/zk-group-sigs-1337689-fixed",
+	"commit": "4a607996fe54a18b76196caa11a1f271e51a554b",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+        {
+          "id": "deny",
+          "file": "src/deny.circom",
+          "template": "deny.circom",
+          "main": "src/deny.circom",
+          "description": ""
+        },
+        {
+          "id": "reveal",
+          "file": "src/reveal.circom",
+          "template": "reveal.circom",
+          "main": "src/reveal.circom",
+          "description": ""
+        },
+        {
+          "id": "sign",
+          "file": "src/sign.circom",
+          "template": "sign.circom",
+          "main": "src/sign.circom",
+          "description": ""
+        }
+      ]
+      
+}

@@ -1,0 +1,32 @@
+{
+    "id": "Veridise internal",
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/internal",
+	"commit": "4a607996fe54a18b76196caa11a1f271e51a554b",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+        {
+          "id": "ArrayXOR@telepathy@n=4",
+          "file": "src/ArrayXOR@telepathy@n=4.circom",
+          "template": "ArrayXOR",
+          "main": "src/ArrayXOR@telepathy@n=4.circom",
+          "description": ""
+        },
+        {
+          "id": "DivModN@veridise@n=13",
+          "file": "src/DivModN@veridise@n=13.circom",
+          "template": "DivModN",
+          "main": "src/DivModN@veridise@n=13.circom",
+          "description": ""
+        },
+        {
+          "id": "Reward@veridise",
+          "file": "src/Reward@veridise.circom",
+          "template": "Reward",
+          "main": "src/Reward@veridise.circom",
+          "description": ""
+        }
+      ]
+      
+}

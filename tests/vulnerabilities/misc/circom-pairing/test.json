@@ -1,0 +1,25 @@
+{
+    "id": "circom-pairing",
+	"source": "ZKSolid",
+	"project_url": "https://github.com/Veridise/ZKSolid/tree/main/benchmarks/circom-pairing",
+	"commit": "4a607996fe54a18b76196caa11a1f271e51a554b",
+    "internal": true,
+    "synthetic": false,
+	"tests": [
+        {
+          "id": "CoreVerifyPubkeyG1@circom-pairing@n=55@k=7",
+          "file": "src/CoreVerifyPubkeyG1@circom-pairing@n=55@k=7.circom",
+          "template": "CoreVerifyPubkeyG1",
+          "main": "src/CoreVerifyPubkeyG1@circom-pairing@n=55@k=7.circom",
+          "description": ""
+        },
+        {
+          "id": "LongToShortNoEndCarry@circom-pairing@n=32@k=3",
+          "file": "src/LongToShortNoEndCarry@circom-pairing@n=32@k=3.circom",
+          "template": "LongToShortNoEndCarry",
+          "main": "src/LongToShortNoEndCarry@circom-pairing@n=32@k=3.circom",
+          "description": ""
+        }
+      ]
+      
+}

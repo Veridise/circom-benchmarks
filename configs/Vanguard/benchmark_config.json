@@ -1,0 +1,517 @@
+{
+  "AND@gates": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/AND@gates.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "AliasCheck@aliascheck": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/AliasCheck@aliascheck.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Ark@poseidon": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Ark@poseidon.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BabyAdd@babyjub": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/BabyAdd@babyjub.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BabyCheck@babyjub": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/BabyCheck@babyjub.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BabyDbl@babyjub": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/BabyDbl@babyjub.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BabyPbk@babyjub": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/BabyPbk@babyjub.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BinSub@binsub": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/BinSub@binsub.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BinSum@binsum": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/BinSum@binsum.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BitElementMulAny@escalarmulany": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/BitElementMulAny@escalarmulany.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Bits2Num@bitify": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Bits2Num@bitify.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Bits2Num_strict@bitify": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Bits2Num_strict@bitify.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Bits2Point@pointbits": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Bits2Point@pointbits.circom",
+    "include_path": "../../tests/libs",
+    "skip": false
+  },
+  "Bits2Point_Strict@pointbits": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Bits2Point_Strict@pointbits.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "CompConstant@compconstant": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/CompConstant@compconstant.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Edwards2Montgomery@montgomery": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Edwards2Montgomery@montgomery.circom",
+    "include_path": "../../tests/libs",
+    "skip": false
+  },
+  "EscalarMul@escalarmul": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/EscalarMul@escalarmul.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "EscalarMulAny@escalarmulany": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/EscalarMulAny@escalarmulany.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "EscalarMulFix@escalarmulfix": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/EscalarMulFix@escalarmulfix.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "EscalarMulWindow@escalarmul": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/EscalarMulWindow@escalarmul.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "EscalarProduct@multiplexer": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/EscalarProduct@multiplexer.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "ForceEqualIfEnabled@comparators": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/ForceEqualIfEnabled@comparators.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "GreaterEqThan@comparators": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/GreaterEqThan@comparators.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "GreaterThan@comparators": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/GreaterThan@comparators.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "IsEqual@comparators": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/IsEqual@comparators.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "IsZero@comparators": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/IsZero@comparators.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "LessEqThan@comparators": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/LessEqThan@comparators.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "LessThan@comparators": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/LessThan@comparators.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "MiMC7@mimc": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MiMC7@mimc.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "MiMCFeistel@mimcsponge": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MiMCFeistel@mimcsponge.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "MiMCSponge@mimcsponge": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MiMCSponge@mimcsponge.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Montgomery2Edwards@montgomery": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Montgomery2Edwards@montgomery.circom",
+    "include_path": "../../tests/libs",
+    "skip": false
+  },
+  "MontgomeryAdd@montgomery": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MontgomeryAdd@montgomery.circom",
+    "include_path": "../../tests/libs",
+    "skip": false
+  },
+  "MontgomeryDouble@montgomery": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MontgomeryDouble@montgomery.circom",
+    "include_path": "../../tests/libs",
+    "skip": false
+  },
+  "MultiAND@gates": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MultiAND@gates.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "MultiMiMC7@mimc": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MultiMiMC7@mimc.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "MultiMux1@mux1": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MultiMux1@mux1.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "MultiMux2@mux2": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MultiMux2@mux2.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "MultiMux3@mux3": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MultiMux3@mux3.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "MultiMux4@mux4": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/MultiMux4@mux4.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Multiplexer@multiplexer": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Multiplexer@multiplexer.circom",
+    "include_path": "../../tests/libs",
+    "skip": false
+  },
+  "Multiplexor2@escalarmulany": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Multiplexor2@escalarmulany.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Mux1@mux1": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Mux1@mux1.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Mux2@mux2": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Mux2@mux2.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Mux3@mux3": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Mux3@mux3.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Mux4@mux4": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Mux4@mux4.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "NAND@gates": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/NAND@gates.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "NOR@gates": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/NOR@gates.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "NOT@gates": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/NOT@gates.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Num2Bits@bitify": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Num2Bits@bitify.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Num2BitsNeg@bitify": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Num2BitsNeg@bitify.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Num2Bits_strict@bitify": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Num2Bits_strict@bitify.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "OR@gates": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/OR@gates.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Pedersen@pedersen": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Pedersen@pedersen.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Pedersen@pedersen_old": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Pedersen@pedersen_old.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Point2Bits@pointbits": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Point2Bits@pointbits.circom",
+    "include_path": "../../tests/libs",
+    "skip": false
+  },
+  "Point2Bits_Strict@pointbits": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Point2Bits_Strict@pointbits.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Poseidon@poseidon": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Poseidon@poseidon.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Segment@pedersen": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Segment@pedersen.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "SegmentMulAny@escalarmulany": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/SegmentMulAny@escalarmulany.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "SegmentMulFix@escalarmulfix": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/SegmentMulFix@escalarmulfix.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Sigma@poseidon": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Sigma@poseidon.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Sign@sign": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Sign@sign.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Switcher@switcher": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Switcher@switcher.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Window4@pedersen": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/Window4@pedersen.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "WindowMulFix@escalarmulfix": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/WindowMulFix@escalarmulfix.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "XOR@gates": {
+    "project_path": "../../tests/vulnerabilities/misc/circomlib/src/XOR@gates.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BigModOld": {
+    "project_path": "../../tests/vulnerabilities/misc/BigModOld/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BatchTreeUpdate_4": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/batchMerkleTreeUpdate_4.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BatchTreeUpdate_8": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/batchMerkleTreeUpdate_8.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BatchTreeUpdate_16": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/batchMerkleTreeUpdate_16.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BatchTreeUpdate_32": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/batchMerkleTreeUpdate_32.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BatchTreeUpdate_64": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/batchMerkleTreeUpdate_64.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Transaction_2_2": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/poseidon_vanchor_2_2.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Transaction_2_8": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/poseidon_vanchor_2_8.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Transaction_16_2": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/poseidon_vanchor_16_2.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Transaction_16_8": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/poseidon_vanchor_16_8.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "TransactionForest_2_2": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/vanchor_forest_2_2.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "TransactionForest_2_8": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/vanchor_forest_2_8.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "TransactionForest_16_2": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/vanchor_forest_16_2.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "TransactionForest_16_8": {
+    "project_path": "../../tests/vulnerabilities/misc/Webb-tools/test/vanchor_forest_16_8.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "LessThanPower": {
+    "project_path": "../../tests/vulnerabilities/uo/LessThanPower/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BitElementMulAny": {
+    "project_path": "../../tests/vulnerabilities/uo/BitElementMulAny/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "SignedFpCarryModP": {
+    "project_path": "../../tests/vulnerabilities/uo/SignedFpCarryModP/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "DivModNArray": {
+    "project_path": "../../tests/vulnerabilities/uo/DivModNArray/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Window4": {
+    "project_path": "../../tests/vulnerabilities/uo/Window4/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "onlycarry": {
+    "project_path": "../../tests/vulnerabilities/uo/onlycarry/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Decoder": {
+    "project_path": "../../tests/vulnerabilities/uo/Decoder/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "MontgomeryDouble": {
+    "project_path": "../../tests/vulnerabilities/uo/MontgomeryDouble/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Num2BitsCheck": {
+    "project_path": "../../tests/vulnerabilities/uo/Num2BitsCheck/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "EmulatedAesencSubstituteBytes": {
+    "project_path": "../../tests/vulnerabilities/uo/EmulatedAesencSubstituteBytes/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "DivModN": {
+    "project_path": "../../tests/vulnerabilities/uo/DivModN/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Edwards2Montgomery": {
+    "project_path": "../../tests/vulnerabilities/uo/Edwards2Montgomery/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "PointCompress": {
+    "project_path": "../../tests/vulnerabilities/uo/PointCompress/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "BinSum": {
+    "project_path": "../../tests/vulnerabilities/uo/BinSum/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Num2Bits": {
+    "project_path": "../../tests/vulnerabilities/uo/Num2Bits/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "MontgomeryAdd": {
+    "project_path": "../../tests/vulnerabilities/uo/MontgomeryAdd/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "ArrayXOR": {
+    "project_path": "../../tests/vulnerabilities/uo/ArrayXOR/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "WindowMulFix": {
+    "project_path": "../../tests/vulnerabilities/uo/WindowMulFix/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "fulladder": {
+    "project_path": "../../tests/vulnerabilities/uo/fulladder/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "LessThanBounded": {
+    "project_path": "../../tests/vulnerabilities/uo/LessThanBounded/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "FpMultiply": {
+    "project_path": "../../tests/vulnerabilities/uo/FpMultiply/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  },
+  "Montgomery2Edwards": {
+    "project_path": "../../tests/vulnerabilities/uo/Montgomery2Edwards/src/main.circom",
+    "include_path": "../../tests/libs",
+    "skip": true
+  }
+}
