@@ -18,9 +18,9 @@
 */
 pragma circom 2.0.0;
 
-include "../libs/circomlib/circuits/montgomery.circom";
-include "../libs/circomlib/circuits/babyjub.circom";
-include "../libs/circomlib/circuits/comparators.circom";
+include "../../../../libs/circomlib/circuits/montgomery.circom";
+include "../../../../libs/circomlib/circuits/babyjub.circom";
+include "../../../../libs/circomlib/circuits/comparators.circom";
 
 template Multiplexor2() {
     signal input sel;

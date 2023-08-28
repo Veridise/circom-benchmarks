@@ -18,9 +18,9 @@
 */
 pragma circom 2.0.0;
 
-include "../libs/circomlib/circuits/mux3.circom";
-include "../libs/circomlib/circuits/montgomery.circom";
-include "../libs/circomlib/circuits/babyjub.circom";
+include "../../../../libs/circomlib/circuits/mux3.circom";
+include "../../../../libs/circomlib/circuits/montgomery.circom";
+include "../../../../libs/circomlib/circuits/babyjub.circom";
 
 /*
     Window of 3 elements, it calculates

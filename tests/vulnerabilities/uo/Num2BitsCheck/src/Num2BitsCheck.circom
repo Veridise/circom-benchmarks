@@ -1,6 +1,6 @@
 pragma circom 2.0.0;
 
-include "../libs/circomlib/circuits/bitify.circom";
+include "../../../../libs/circomlib/circuits/bitify.circom";
 
 template Num2BitsCheck(msgBits) {
     signal input msg_in;

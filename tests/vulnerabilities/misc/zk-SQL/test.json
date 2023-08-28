@@ -14,13 +14,6 @@
           "description": ""
         },
         {
-          "id": "hashTable",
-          "file": "src/hashTable.circom",
-          "template": "hashTable.circom",
-          "main": "src/hashTable.circom",
-          "description": ""
-        },
-        {
           "id": "insert",
           "file": "src/insert.circom",
           "template": "insert.circom",
@@ -41,13 +34,6 @@
           "main": "src/update.circom",
           "description": ""
         },
-        {
-          "id": "utils",
-          "file": "src/utils.circom",
-          "template": "utils.circom",
-          "main": "src/utils.circom",
-          "description": ""
-        }
       ]
       
 }
