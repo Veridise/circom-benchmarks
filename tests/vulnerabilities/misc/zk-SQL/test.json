@@ -33,7 +33,7 @@
           "template": "update.circom",
           "main": "src/update.circom",
           "description": ""
-        },
+        }
       ]
       
 }
