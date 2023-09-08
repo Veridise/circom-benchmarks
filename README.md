@@ -21,7 +21,7 @@ cargo build --release
 python scripts/benchmark.py --src path/to/this/repo --out report.csv --timeout 300
 ```
 
-The results of the compilation will be in `results.csv`. Tests can either succeed, fail or timeout.
+The results of the compilation will be in `report.csv`. Tests can either succeed, fail or timeout.
 Failures could also be either circom failures (the compiler refuses the output), panics or unimplemented errors.
 
 # Structure
