@@ -7,6 +7,23 @@ There are two types of tests:
 - Frontend coverage tests: This tests are used for frontend circom parsers to study the feature coverage of the tool.
 - Detector ground truth: Collection of circom circuits with defects used for testing the different analysis tools in Veridise.
 
+# Testing the circom frontend with this repo
+
+You will need to clone [circom](https://github.com/veridise/circom) and this repo.
+
+Go to circom's repo and build it with `cargo build --release`. Make sure the binary is in `target/release/circom`. The script will look for the circom compiler in that path, if your compiler is in a different path you can specify the path in `scripts/benchmarks.py` with the `--circom PATH` flag.
+
+Run the following commands to compile each test case with the frontend:
+
+```bash
+cd path/to/circom
+cargo build --release
+python scripts/benchmark.py --src path/to/this/repo --out report.csv --timeout 300
+```
+
+The results of the compilation will be in `results.csv`. Tests can either succeed, fail or timeout.
+Failures could also be either circom failures (the compiler refuses the output), panics or unimplemented errors.
+
 # Structure
 
 Each test should be in a directory following this path:
