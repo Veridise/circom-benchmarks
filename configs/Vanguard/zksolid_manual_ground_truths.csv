@@ -1,0 +1,2 @@
+project,detector,file,function,info,found_in_audit
+zksolid-paper/benchmarks/keccak256-circom-af3e898/squeeze_test,uc-inputs,keccak.circom,Squeeze,s[256..1600]
