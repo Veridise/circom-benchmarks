@@ -1,4 +1,4 @@
-include "../../node_modules/circomlib/circuits/poseidon.circom";
+include "../../../../circomlib/circuits/poseidon.circom";
 
 /**
  * Computes the hash of an account state

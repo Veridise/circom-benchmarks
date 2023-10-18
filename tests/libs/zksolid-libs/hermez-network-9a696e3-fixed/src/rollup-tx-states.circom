@@ -1,7 +1,7 @@
-include "../node_modules/circomlib/circuits/comparators.circom";
-include "../node_modules/circomlib/circuits/mux2.circom";
-include "../node_modules/circomlib/circuits/mux1.circom";
-include "../node_modules/circomlib/circuits/poseidon.circom";
+include "../../../circomlib/circuits/comparators.circom";
+include "../../../circomlib/circuits/mux2.circom";
+include "../../../circomlib/circuits/mux1.circom";
+include "../../../circomlib/circuits/poseidon.circom";
 
 /**
  * Calculates all the internal transaction states

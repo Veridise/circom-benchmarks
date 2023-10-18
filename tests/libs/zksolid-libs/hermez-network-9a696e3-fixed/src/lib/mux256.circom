@@ -1,5 +1,5 @@
-include "../../node_modules/circomlib/circuits/mux4.circom";
-include "../../node_modules/circomlib/circuits/bitify.circom";
+include "../../../../circomlib/circuits/mux4.circom";
+include "../../../../circomlib/circuits/bitify.circom";
 
 /**
  * multiplexer with 256 inputs

@@ -1,7 +1,7 @@
-include "../node_modules/circomlib/circuits/comparators.circom";
-include "../node_modules/circomlib/circuits/poseidon.circom";
-include "../node_modules/circomlib/circuits/smt/smtverifier.circom";
-include "../node_modules/circomlib/circuits/sha256/sha256.circom";
+include "../../../circomlib/circuits/comparators.circom";
+include "../../../circomlib/circuits/poseidon.circom";
+include "../../../circomlib/circuits/smt/smtverifier.circom";
+include "../../../circomlib/circuits/sha256/sha256.circom";
 
 include "./lib/hash-state.circom"
 

@@ -1,5 +1,5 @@
-include "../node_modules/circomlib/circuits/bitify.circom";
-include "../node_modules/circomlib/circuits/comparators.circom";
+include "../../../circomlib/circuits/bitify.circom";
+include "../../../circomlib/circuits/comparators.circom";
 
 include "./compute-fee.circom";
 

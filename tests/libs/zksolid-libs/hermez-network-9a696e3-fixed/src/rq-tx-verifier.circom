@@ -1,5 +1,5 @@
-include "../node_modules/circomlib/circuits/bitify.circom";
-include "../node_modules/circomlib/circuits/mux3.circom";
+include "../../../circomlib/circuits/bitify.circom";
+include "../../../circomlib/circuits/mux3.circom";
 
 /**
  * Check past and future data transactions to match the required data signed

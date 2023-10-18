@@ -1,7 +1,7 @@
-include "../node_modules/circomlib/circuits/smt/smtprocessor.circom";
-include "../node_modules/circomlib/circuits/eddsaposeidon.circom";
-include "../node_modules/circomlib/circuits/gates.circom";
-include "../node_modules/circomlib/circuits/mux1.circom";
+include "../../../circomlib/circuits/smt/smtprocessor.circom";
+include "../../../circomlib/circuits/eddsaposeidon.circom";
+include "../../../circomlib/circuits/gates.circom";
+include "../../../circomlib/circuits/mux1.circom";
 
 include "./decode-tx.circom";
 include "./rollup-tx.circom";

@@ -1,8 +1,8 @@
-include "../node_modules/circomlib/circuits/comparators.circom";
-include "../node_modules/circomlib/circuits/mux4.circom";
-include "../node_modules/circomlib/circuits/bitify.circom";
-include "../node_modules/circomlib/circuits/mux1.circom";
-include "../node_modules/circomlib/circuits/smt/smtprocessor.circom";
+include "../../../circomlib/circuits/comparators.circom";
+include "../../../circomlib/circuits/mux4.circom";
+include "../../../circomlib/circuits/bitify.circom";
+include "../../../circomlib/circuits/mux1.circom";
+include "../../../circomlib/circuits/smt/smtprocessor.circom";
 
 include "./lib/hash-state.circom";
 

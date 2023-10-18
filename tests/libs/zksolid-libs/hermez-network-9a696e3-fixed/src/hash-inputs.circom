@@ -1,6 +1,6 @@
-include "../node_modules/circomlib/circuits/poseidon.circom";
-include "../node_modules/circomlib/circuits/sha256/sha256.circom";
-include "../node_modules/circomlib/circuits/bitify.circom";
+include "../../../circomlib/circuits/poseidon.circom";
+include "../../../circomlib/circuits/sha256/sha256.circom";
+include "../../../circomlib/circuits/bitify.circom";
 
 /**
  * Compute the sha256 hash of all pretended public inputs

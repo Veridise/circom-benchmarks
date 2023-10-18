@@ -1,4 +1,4 @@
-include "../node_modules/circomlib/circuits/bitify.circom";
+include "../../../circomlib/circuits/bitify.circom";
 
 include "./lib/mux256.circom";
 
