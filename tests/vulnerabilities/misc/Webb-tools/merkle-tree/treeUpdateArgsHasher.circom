@@ -1,7 +1,7 @@
 pragma circom 2.0.0;
 
-include "../node_modules/circomlib/circuits/bitify.circom";
-include "../node_modules/circomlib/circuits/sha256/sha256.circom";
+include "../../../../libs/circomlib/circuits/bitify.circom";
+include "../../../../libs/circomlib/circuits/sha256/sha256.circom";
 
 // Computes a SHA256 hash of all inputs packed into a byte array
 // Field elements are padded to 256 bits with zeroes

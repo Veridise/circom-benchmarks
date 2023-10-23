@@ -1,9 +1,9 @@
 pragma circom 2.0.0;
 
-include "ed25519/modinv.circom";
-include "ed25519/chunkedmul.circom";
-include "ed25519/modulus.circom";
-include "circomlib/circuits/bitify.circom";
+include "../../../../libs/ed25519/modinv.circom";
+include "../../../../libs/ed25519/chunkedmul.circom";
+include "../../../../libs/ed25519/modulus.circom";
+include "../../../../libs/circomlib/circuits/bitify.circom";
 
 template PointCompress(){
     signal input P[4][3];
