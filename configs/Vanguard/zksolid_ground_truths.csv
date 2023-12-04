@@ -1291,7 +1291,7 @@ zksolid-paper/benchmarks/circomlib-cff5ab6/Pedersen@pedersen,zk-divide-by-zero,m
 zksolid-paper/benchmarks/circomlib-cff5ab6/Point2Bits@pointbits,uc-inputs,pointbits.circom,Point2Bits,in[0..2],Yes
 zksolid-paper/benchmarks/circomlib-cff5ab6/Point2Bits@pointbits,uc-inputs,pointbits.circom,Point2Bits,out[0..256],Yes
 zksolid-paper/benchmarks/circomlib-cff5ab6/Point2Bits@pointbits,uc-outputs,pointbits.circom,Point2Bits,out[0..256],Yes
-zksolid-paper/benchmarks/circomlib-cff5ab6/Segment@pedersen,uc-subcmp-outputs,escalarmulfix.circom,Segment,windows[1].out8[0..2],Yes
+zksolid-paper/benchmarks/circomlib-cff5ab6/Segment@pedersen,uc-subcmp-outputs,pedersen.circom,Segment,windows[1].out8[0..2],Yes
 zksolid-paper/benchmarks/circomlib-cff5ab6/Segment@pedersen,zk-divide-by-zero,montgomery.circom,Edwards2Montgomery,in[0..2],Yes
 zksolid-paper/benchmarks/circomlib-cff5ab6/Segment@pedersen,zk-divide-by-zero,montgomery.circom,Montgomery2Edwards,in[0..2],Yes
 zksolid-paper/benchmarks/circomlib-cff5ab6/Segment@pedersen,zk-divide-by-zero,montgomery.circom,MontgomeryAdd,in1[0],Yes
