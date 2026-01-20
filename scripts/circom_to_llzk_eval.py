@@ -6,7 +6,9 @@
 #   - python3: For running this script
 #   - circom: For compiling the benchmarks
 #
-# Usage: python3 scripts/eval_circom_benchmarks.py /path/to/circom-benchmarks [--timeout SECONDS] [--circom-bin PATH]
+# Usage: python3 scripts/circom_to_llzk_eval.py [--benchmark_dir PATH] [--timeout SECONDS] [--circom-bin PATH] [--no-concrete/--concrete]
+# 
+# Example: python3 scripts/circom_to_llzk_eval --timeout 2 --circom-bin ~/veridise/circom/target/bin/circom/ --no-concrete
 
 import argparse
 import csv
