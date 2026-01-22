@@ -18,7 +18,7 @@
 */
 pragma circom 2.0.0;
 
-include "sha256_2.jaz";
+include "sha256_2.circom";
 
 template Main() {
     signal input a;
