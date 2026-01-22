@@ -8,7 +8,7 @@
 #
 # Usage: python3 scripts/circom_to_llzk_eval.py [--benchmark_dir PATH] [--timeout SECONDS] [--circom-bin PATH] [--no-concrete/--concrete]
 # 
-# Example: python3 scripts/circom_to_llzk_eval --timeout 2 --circom-bin ~/veridise/circom/target/bin/circom/ --no-concrete
+# Example: python3 scripts/circom_to_llzk_eval.py --timeout 2 --circom-bin ~/veridise/circom/target/bin/circom --no-concrete
 
 import argparse
 import csv
