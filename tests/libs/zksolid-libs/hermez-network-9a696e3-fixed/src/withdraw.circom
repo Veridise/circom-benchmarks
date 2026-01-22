@@ -23,14 +23,14 @@ template Withdraw(nLevels) {
     signal output hashGlobalInputs;
 
     // private inputs
-    signal private input rootExit;
-	signal private input ethAddr;
-    signal private input tokenID;
-    signal private input balance;
-    signal private input idx;
-    signal private input sign;
-    signal private input ay;
-    signal private input siblingsState[nLevels + 1];
+    signal input rootExit;
+	signal input ethAddr;
+    signal input tokenID;
+    signal input balance;
+    signal input idx;
+    signal input sign;
+    signal input ay;
+    signal input siblingsState[nLevels + 1];
 
     // compute account state hash
     ////////

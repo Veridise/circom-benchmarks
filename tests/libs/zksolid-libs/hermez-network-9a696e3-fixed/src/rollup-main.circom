@@ -102,98 +102,98 @@ template RollupMain(nTx, nLevels, maxL1Tx, maxFeeTx){
     signal output hashGlobalInputs;
 
     // private signals taking part of the hash-input
-    signal private input oldLastIdx;
-    signal private input oldStateRoot;
-    signal private input globalChainID;
-    signal private input currentNumBatch;
+    signal input oldLastIdx;
+    signal input oldStateRoot;
+    signal input globalChainID;
+    signal input currentNumBatch;
 
-    signal private input feeIdxs[maxFeeTx];
+    signal input feeIdxs[maxFeeTx];
 
     // accumulate fees
-    signal private input feePlanTokens[maxFeeTx];
+    signal input feePlanTokens[maxFeeTx];
 
     // Intermediary States to parallelize witness computation
     // decode-tx
-    signal private input imOnChain[nTx-1];
-    signal private input imOutIdx[nTx-1];
+    signal input imOnChain[nTx-1];
+    signal input imOutIdx[nTx-1];
     // rollup-tx
-    signal private input imStateRoot[nTx-1];
-    signal private input imExitRoot[nTx-1];
-    signal private input imAccFeeOut[nTx-1][maxFeeTx];
+    signal input imStateRoot[nTx-1];
+    signal input imExitRoot[nTx-1];
+    signal input imAccFeeOut[nTx-1][maxFeeTx];
     // fee-tx
-    signal private input imStateRootFee[maxFeeTx - 1];
-    signal private input imInitStateRootFee;
-    signal private input imFinalAccFee[maxFeeTx];
+    signal input imStateRootFee[maxFeeTx - 1];
+    signal input imInitStateRootFee;
+    signal input imFinalAccFee[maxFeeTx];
 
     // transaction L1-L2
-    signal private input txCompressedData[nTx];
-    signal private input amountF[nTx];
-    signal private input txCompressedDataV2[nTx];
+    signal input txCompressedData[nTx];
+    signal input amountF[nTx];
+    signal input txCompressedDataV2[nTx];
 
-    signal private input fromIdx[nTx];
-    signal private input auxFromIdx[nTx];
+    signal input fromIdx[nTx];
+    signal input auxFromIdx[nTx];
 
-    signal private input toIdx[nTx];
-    signal private input auxToIdx[nTx];
-    signal private input toBjjAy[nTx];
-    signal private input toEthAddr[nTx];
+    signal input toIdx[nTx];
+    signal input auxToIdx[nTx];
+    signal input toBjjAy[nTx];
+    signal input toEthAddr[nTx];
 
-    signal private input maxNumBatch[nTx];
-    signal private input onChain[nTx];
-    signal private input newAccount[nTx];
-    signal private input rqOffset[nTx];
+    signal input maxNumBatch[nTx];
+    signal input onChain[nTx];
+    signal input newAccount[nTx];
+    signal input rqOffset[nTx];
 
     // transaction L2 request data
-    signal private input rqTxCompressedDataV2[nTx];
-    signal private input rqToEthAddr[nTx];
-    signal private input rqToBjjAy[nTx];
+    signal input rqTxCompressedDataV2[nTx];
+    signal input rqToEthAddr[nTx];
+    signal input rqToBjjAy[nTx];
 
     // transaction L2 signature
-    signal private input s[nTx];
-    signal private input r8x[nTx];
-    signal private input r8y[nTx];
+    signal input s[nTx];
+    signal input r8x[nTx];
+    signal input r8y[nTx];
 
     // transaction L1
-    signal private input loadAmountF[nTx];
-    signal private input fromEthAddr[nTx];
-    signal private input fromBjjCompressed[nTx][256];
+    signal input loadAmountF[nTx];
+    signal input fromEthAddr[nTx];
+    signal input fromBjjCompressed[nTx][256];
 
     // State 1
-    signal private input tokenID1[nTx];
-    signal private input nonce1[nTx];
-    signal private input sign1[nTx];
-    signal private input balance1[nTx];
-    signal private input ay1[nTx];
-    signal private input ethAddr1[nTx];
-    signal private input siblings1[nTx][nLevels+1];
+    signal input tokenID1[nTx];
+    signal input nonce1[nTx];
+    signal input sign1[nTx];
+    signal input balance1[nTx];
+    signal input ay1[nTx];
+    signal input ethAddr1[nTx];
+    signal input siblings1[nTx][nLevels+1];
     // Required for inserts and deletes
-    signal private input isOld0_1[nTx];
-    signal private input oldKey1[nTx];
-    signal private input oldValue1[nTx];
+    signal input isOld0_1[nTx];
+    signal input oldKey1[nTx];
+    signal input oldValue1[nTx];
 
     // State 2
-    signal private input tokenID2[nTx];
-    signal private input nonce2[nTx];
-    signal private input sign2[nTx];
-    signal private input balance2[nTx];
-    signal private input ay2[nTx];
-    signal private input ethAddr2[nTx];
-    signal private input siblings2[nTx][nLevels+1];
-    signal private input newExit[nTx];
+    signal input tokenID2[nTx];
+    signal input nonce2[nTx];
+    signal input sign2[nTx];
+    signal input balance2[nTx];
+    signal input ay2[nTx];
+    signal input ethAddr2[nTx];
+    signal input siblings2[nTx][nLevels+1];
+    signal input newExit[nTx];
     // Required for inserts and deletes
-    signal private input isOld0_2[nTx];
-    signal private input oldKey2[nTx];
-    signal private input oldValue2[nTx];
+    signal input isOld0_2[nTx];
+    signal input oldKey2[nTx];
+    signal input oldValue2[nTx];
 
     // fee tx
     // State fees
-    signal private input tokenID3[maxFeeTx];
-    signal private input nonce3[maxFeeTx];
-    signal private input sign3[maxFeeTx];
-    signal private input balance3[maxFeeTx];
-    signal private input ay3[maxFeeTx];
-    signal private input ethAddr3[maxFeeTx];
-    signal private input siblings3[maxFeeTx][nLevels+1];
+    signal input tokenID3[maxFeeTx];
+    signal input nonce3[maxFeeTx];
+    signal input sign3[maxFeeTx];
+    signal input balance3[maxFeeTx];
+    signal input ay3[maxFeeTx];
+    signal input ethAddr3[maxFeeTx];
+    signal input siblings3[maxFeeTx][nLevels+1];
 
     var i;
     var j;
