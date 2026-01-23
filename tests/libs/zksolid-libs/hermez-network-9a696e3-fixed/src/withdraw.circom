@@ -3,7 +3,7 @@ include "../../../circomlib/circuits/poseidon.circom";
 include "../../../circomlib/circuits/smt/smtverifier.circom";
 include "../../../circomlib/circuits/sha256/sha256.circom";
 
-include "./lib/hash-state.circom"
+include "./lib/hash-state.circom";
 
 /**
  * Verify withdrawal by proving that a leaf exist on the exit tree
