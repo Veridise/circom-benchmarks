@@ -1,8 +1,8 @@
 pragma circom 2.0.3;
 
-include "../../circuits/curve.circom";
+include "../../circuits/extra_curve.circom";
 
-component main = MillerLoop2(35, 11, 4, 
+component main = MillerLoop1(35, 11, 4, 
 /*[30064771073,
  33822867455,
  201324911,

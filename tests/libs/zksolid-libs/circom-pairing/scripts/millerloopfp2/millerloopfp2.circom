@@ -1,6 +1,6 @@
 pragma circom 2.0.3;
 
-include "../../circuits/curve_fp2.circom";
+include "../../circuits/pairing.circom";
 include "../../circuits/bls12_381_func.circom";
 
 component main = MillerLoopFp2(55, 7, [4,4],
