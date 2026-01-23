@@ -26,12 +26,11 @@ template Main(GROUP_SIZE) {
     eqs[i] = IsEqual();
     eqs[i].in[0] <== userPub;
     eqs[i].in[1] <== hashes[i];
-
-    is_hash_present[i] = OR();
   }
 
   // a big loop of ORs
   for(var i=1; i<GROUP_SIZE; i++){
+    is_hash_present[i] = OR();
     is_hash_present[i].a <== eqs[i].out;
     is_hash_present[i].b <== i == 1 ? eqs[0].out : is_hash_present[i-1].out;
   }
