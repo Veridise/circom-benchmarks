@@ -1,6 +1,6 @@
 pragma circom 2.0.2;
 
-include "../../circuits/curve.circom";
+include "../../circuits/pairing.circom";
 
 component main = LineFunctionEqual(55, 7, 
 [35747322042231467,
