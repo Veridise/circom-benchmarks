@@ -1,3 +1,5 @@
+pragma circom 2.0.0;
+
 include "../../../circomlib/circuits/poseidon.circom";
 include "../../../circomlib/circuits/bitify.circom";
 include "../../../circomlib/circuits/mux1.circom";

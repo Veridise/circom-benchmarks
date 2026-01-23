@@ -10,7 +10,7 @@ template UnusedCompOutput() {
     signal input in1;
     signal input in2;
     signal output out;
-    out === in2 * in2;
+    out <== in2 * in2;
     component inc = Inc();
     inc.in <== in1;
 }

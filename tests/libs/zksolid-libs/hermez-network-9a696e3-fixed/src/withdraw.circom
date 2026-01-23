@@ -1,9 +1,11 @@
+pragma circom 2.0.0;
+
 include "../../../circomlib/circuits/comparators.circom";
 include "../../../circomlib/circuits/poseidon.circom";
 include "../../../circomlib/circuits/smt/smtverifier.circom";
 include "../../../circomlib/circuits/sha256/sha256.circom";
 
-include "./lib/hash-state.circom"
+include "./lib/hash-state.circom";
 
 /**
  * Verify withdrawal by proving that a leaf exist on the exit tree
@@ -23,14 +25,14 @@ template Withdraw(nLevels) {
     signal output hashGlobalInputs;
 
     // private inputs
-    signal private input rootExit;
-	signal private input ethAddr;
-    signal private input tokenID;
-    signal private input balance;
-    signal private input idx;
-    signal private input sign;
-    signal private input ay;
-    signal private input siblingsState[nLevels + 1];
+    signal input rootExit;
+	signal input ethAddr;
+    signal input tokenID;
+    signal input balance;
+    signal input idx;
+    signal input sign;
+    signal input ay;
+    signal input siblingsState[nLevels + 1];
 
     // compute account state hash
     ////////

@@ -107,16 +107,13 @@ template GCM_SIV_DEC_2_Keys(n_bits_aad, n_bits_msg)
     MSG_t = aes_256_ctr.out;
 
     component polyval_1 = POLYVAL(n_bits_aad);
-    if(aad_len != 0)
+    for(i=0; i<n_bits_aad; i++) polyval_1.in[i] <== AAD[i];
+    for(i=0; i<128; i++) polyval_1.H[i] <== Record_Hash_Key[i];
+    for(i=0; i<2; i++)
     {
-        for(i=0; i<n_bits_aad; i++) polyval_1.in[i] <== AAD[i];
-        for(i=0; i<128; i++) polyval_1.H[i] <== Record_Hash_Key[i];
-        for(i=0; i<2; i++)
-        {
-            for(j=0; j<64; j++) polyval_1.T[i][j] <== T[i][j];
-        }
-        T = polyval_1.result;
+        for(j=0; j<64; j++) polyval_1.T[i][j] <== T[i][j];
     }
+    T = (aad_len == 0) ? T : polyval_1.result;
 
     component polyval_2 = POLYVAL(n_bits_msg);
     for(i=0; i<n_bits_msg; i++) polyval_2.in[i] <== MSG_t[i];

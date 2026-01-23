@@ -1,3 +1,5 @@
+pragma circom 2.0.0;
+
 include "../../../circomlib/circuits/comparators.circom";
 include "../../../circomlib/circuits/mux2.circom";
 include "../../../circomlib/circuits/mux1.circom";
