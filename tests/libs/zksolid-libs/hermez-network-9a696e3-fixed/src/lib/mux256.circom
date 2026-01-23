@@ -1,3 +1,5 @@
+pragma circom 2.0.0;
+
 include "../../../../circomlib/circuits/mux4.circom";
 include "../../../../circomlib/circuits/bitify.circom";
 

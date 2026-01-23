@@ -1,3 +1,5 @@
+pragma circom 2.0.0;
+
 include "../../../circomlib/circuits/smt/smtprocessor.circom";
 include "../../../circomlib/circuits/eddsaposeidon.circom";
 include "../../../circomlib/circuits/gates.circom";
