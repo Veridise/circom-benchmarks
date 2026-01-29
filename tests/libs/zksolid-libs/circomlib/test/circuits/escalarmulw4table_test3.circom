@@ -3,7 +3,7 @@ pragma circom 2.0.0;
 include "../../circuits/escalarmulw4table.circom";
 
 
-template Main() {
+template MainTemplate() {
     signal input in;
     signal output out[16][2];
     var base[2] = [5299619240641551281634865583518297030282874472190772894086521144482721001553,
@@ -16,4 +16,4 @@ template Main() {
     }
 }
 
-component main = Main();
+component main = MainTemplate();

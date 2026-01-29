@@ -4,7 +4,7 @@ include "../../circuits/escalarmulfix.circom";
 include "../../circuits/bitify.circom";
 
 
-template Main() {
+template MainTemplate() {
     signal input e;
     signal output out[2];
 
@@ -27,5 +27,5 @@ template Main() {
     escalarMul.out[1] ==> out[1];
 }
 
-component main = Main();
+component main = MainTemplate();
 

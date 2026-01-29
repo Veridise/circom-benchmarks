@@ -4,7 +4,7 @@ include "../../circuits/pedersen_old.circom";
 include "../../circuits/bitify.circom";
 
 
-template Main() {
+template MainTemplate() {
     signal input in[2];
     signal output out[2];
 
@@ -28,4 +28,4 @@ template Main() {
     pedersen.out[1] ==> out[1];
 }
 
-component main = Main();
+component main = MainTemplate();

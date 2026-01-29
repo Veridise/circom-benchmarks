@@ -3,7 +3,7 @@ pragma circom 2.0.0;
 include "../../circuits/pointbits.circom";
 
 
-template Main() {
+template MainTemplate() {
     signal input in[2];
 
     var i;
@@ -22,4 +22,4 @@ template Main() {
     b2p.out[1] === in[1];
 }
 
-component main = Main();
+component main = MainTemplate();

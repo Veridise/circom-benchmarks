@@ -8,7 +8,7 @@ pragma circom 2.0.3;
 
 include "./perlin.circom";
 
-template Main() {
+template MainTemplate() {
     signal input x;
     signal input y;
     // todo: label this as planetHashKey

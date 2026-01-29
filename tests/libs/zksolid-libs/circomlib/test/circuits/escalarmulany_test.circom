@@ -3,7 +3,7 @@ pragma circom 2.0.0;
 include "../../circuits/escalarmulany.circom";
 include "../../circuits/bitify.circom";
 
-template Main() {
+template MainTemplate() {
     signal input e;
     signal input p[2];
     signal output out[2];
@@ -26,5 +26,5 @@ template Main() {
     escalarMulAny.out[1] ==> out[1];
 }
 
-component main = Main();
+component main = MainTemplate();
 

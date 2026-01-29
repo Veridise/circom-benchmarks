@@ -14,7 +14,7 @@ include "../circomlib/circuits/comparators.circom";
 include "./range_proof.circom";
 include "./perlin.circom";
 
-template Main() {
+template MainTemplate() {
     signal input x1;
     signal input y1;
     signal input x2;

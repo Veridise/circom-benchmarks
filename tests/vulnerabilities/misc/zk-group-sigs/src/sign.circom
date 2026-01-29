@@ -4,7 +4,7 @@ include "../../../../libs/zksolid-libs/circomlib/circuits/mimcsponge.circom";
 include "../../../../libs/zksolid-libs/circomlib/circuits/comparators.circom";
 include "../../../../libs/zksolid-libs/circomlib/circuits/gates.circom";
 
-template Main(GROUP_SIZE) {
+template MainTemplate(GROUP_SIZE) {
   signal input secret;
   signal input hashes[GROUP_SIZE];
   signal input msg;
@@ -37,7 +37,7 @@ template Main(GROUP_SIZE) {
 
   // assert that hash is present
   is_hash_present[GROUP_SIZE-1].out === 1;
-  
+
   // sign and return output message using user's secret
   component mimcAttestation = MiMCSponge(2, 220, 1);
   mimcAttestation.ins[0] <== msg;
@@ -46,4 +46,4 @@ template Main(GROUP_SIZE) {
   msgAttestation <== mimcAttestation.outs[0];
 }
 
-component main = Main(40);
+component main = MainTemplate(40);

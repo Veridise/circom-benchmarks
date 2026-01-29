@@ -14,17 +14,17 @@ include "../../circuits/eth_addr.circom";
 
   Intermediate values:
   - myAddr (supposed to be addr of privkey)
-  
+
   Output:
   - msgAttestation
-  
+
   Prove:
   - PrivKeyToAddr(privkey) == myAddr
   - (x - addr1)(x - addr2)(x - addr3) == 0
   - msgAttestation == mimc(msg, privkey)
 */
 
-template Main(n, k) {
+template MainTemplate(n, k) {
     assert(n * k >= 256);
     assert(n * (k-1) < 256);
 
@@ -56,7 +56,7 @@ template Main(n, k) {
     signal temp;
     temp <== (myAddr - addr1) * (myAddr - addr2);
     0 === temp * (myAddr - addr3);
-    
+
     // produce signature
     component mimcAttestation = MiMCSponge(k+1, 220, 1);
     mimcAttestation.ins[0] <== msg;
@@ -67,4 +67,4 @@ template Main(n, k) {
     msgAttestation <== mimcAttestation.outs[0];
 }
 
-component main {public [addr1, addr2, addr3, msg]} = Main(64, 4);
+component main {public [addr1, addr2, addr3, msg]} = MainTemplate(64, 4);

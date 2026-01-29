@@ -18,7 +18,7 @@ template Constants() {
     out[7] <== 191;
 }
 
-template Main() {
+template MainTemplate() {
     var i;
     signal input selector;//private
     signal output out;
@@ -38,4 +38,4 @@ template Main() {
     mux.out ==> out;
 }
 
-component main = Main();
+component main = MainTemplate();

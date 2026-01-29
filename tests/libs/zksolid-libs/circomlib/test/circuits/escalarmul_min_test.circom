@@ -3,7 +3,7 @@ pragma circom 2.0.0;
 include "../../circuits/escalarmul.circom";
 
 
-template Main() {
+template MainTemplate() {
     signal input in[256];
     signal output out[2];
 
@@ -24,4 +24,4 @@ template Main() {
     escalarMul.out[1] ==> out[1];
 }
 
-component main = Main();
+component main = MainTemplate();

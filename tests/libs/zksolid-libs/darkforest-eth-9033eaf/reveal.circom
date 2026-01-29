@@ -11,7 +11,7 @@ include "../circomlib/circuits/bitify.circom";
 include "./range_proof.circom";
 include "./perlin.circom";
 
-template Main() {
+template MainTemplate() {
     signal input x;
     signal input y;
     signal input PLANETHASH_KEY;

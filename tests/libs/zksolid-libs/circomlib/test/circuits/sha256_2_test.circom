@@ -2,7 +2,7 @@ pragma circom 2.0.0;
 
 include "../../circuits/sha256/sha256_2.circom";
 
-template Main() {
+template MainTemplate() {
     signal input a; //private
     signal input b; //private
     signal output out;
@@ -14,4 +14,4 @@ template Main() {
     out <== sha256_2.out;
 }
 
-component main = Main();
+component main = MainTemplate();
