@@ -30,5 +30,3 @@ template MainTemplate() {
 }
 
 component main = MainTemplate();
-
-
