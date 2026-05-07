@@ -1,6 +1,6 @@
 pragma circom 2.0.2;
 
-include "../../../node_modules/circomlib/circuits/sha256/sha256.circom";
+include "../../../../circomlib/circuits/sha256/sha256.circom";
 
 // This is just to test the constraint cost of a raw SHA
 // circom test/test_sha_bytes_constraint_cost.circom --r1cs --O2
