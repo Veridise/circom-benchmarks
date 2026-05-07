@@ -1,6 +1,9 @@
 pragma circom 2.0.5;
 
-include "./sha256.circom";
+include "constants.circom";
+include "sha256.circom";
+include "pairing/bls12_381_func.circom";
+include "pairing/fp.circom";
 
 /*
  * Based on github.com/paulmillr/noble-bls12-381. Implements the logic for
